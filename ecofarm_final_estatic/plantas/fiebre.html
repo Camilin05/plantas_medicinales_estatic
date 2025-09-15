@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas para la Fiebre - Ecofarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 Ecofarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="text-success fw-bold">Plantas para la Fiebre</h1>
+            <p class="lead text-muted">Remedios herbales que ayudan a regular la temperatura corporal y aliviar el malestar.</p>
+        </div>
+
+        <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
+            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones Importantes</div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Consulta a un médico si la fiebre dura más de 3 días o supera los 39°C.</li>
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Evita el uso de Sauce Blanco si eres alérgico a la aspirina o tomas anticoagulantes.</li>
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Complementa el uso de plantas con paños fríos y buena hidratación.</li>
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>No excedas las 2-3 tazas de infusión al día para evitar efectos secundarios.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionPlantasFiebre">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSauce">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauce" aria-expanded="false" aria-controls="collapseSauce">
+                        <strong>1. Sauce Blanco (Salix alba)</strong>
+                    </button>
+                </h2>
+                <div id="collapseSauce" class="accordion-collapse collapse" aria-labelledby="headingSauce" data-bs-parent="#accordionPlantasFiebre">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/sauce_blanco.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Sauce Blanco">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Su corteza se usa en decocción (hervir 5g en 250ml de agua). Ideal en cuadros gripales como sustituto natural de analgésicos leves.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Su corteza contiene salicina, un compuesto que es el precursor natural de la aspirina, con acción antiinflamatoria y antipirética (reduce la fiebre).</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Su uso se remonta a la antigua Grecia, donde Hipócrates recomendaba masticar su corteza para la fiebre. En el siglo XIX se aisló la salicina, abriendo el camino para la aspirina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSauco">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauco" aria-expanded="false" aria-controls="collapseSauco">
+                        <strong>2. Saúco (Sambucus nigra)</strong>
+                    </button>
+                </h2>
+                <div id="collapseSauco" class="accordion-collapse collapse" aria-labelledby="headingSauco" data-bs-parent="#accordionPlantasFiebre">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/sauco.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Saúco">
+                            </div>  
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Las infusiones de sus flores ayudan a inducir la sudoración para bajar la fiebre. Los extractos de sus bayas alivian la congestión y síntomas gripales.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Sus flores son diaforéticas (provocan sudor) y sus bayas tienen propiedades antivirales y antiinflamatorias. Sus hojas y tallos crudos son tóxicos.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Usado tradicionalmente en la Europa medieval como remedio para resfriados y fiebre. Estudios modernos confirman que sus extractos reducen la duración y severidad de la gripe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Ecofarma. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

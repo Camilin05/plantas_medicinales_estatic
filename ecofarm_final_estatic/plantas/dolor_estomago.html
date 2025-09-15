@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas para el Dolor de Estómago - Ecofarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 Ecofarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="text-success fw-bold">Plantas para el Dolor de Estómago</h1>
+            <p class="lead text-muted">Remedios naturales para aliviar el malestar, calmar la acidez y mejorar la digestión.</p>
+        </div>
+
+        <div class="card bg-warning-subtle border-warning shadow-sm mb-5">
+            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones</div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Evita comer en exceso y no te acuestes inmediatamente después de comer.</li>
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Aumenta la ingesta de líquidos y alimentos ricos en fibra, como frutas y verduras.</li>
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Reduce el consumo de alimentos grasos y fritos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionPlantas">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <strong>1. Menta (Mentha)</strong>
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionPlantas">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center"><img src="../img/menta.jpg" class="img-fluid rounded shadow-sm" alt="Menta"></div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La menta se utiliza comúnmente para aliviar problemas digestivos como la indigestión, los gases y la hinchazón. Se puede consumir en forma de infusión o masticando sus hojas frescas para calmar el malestar estomacal. El aceite esencial de menta se emplea en aromaterapia por sus propiedades descongestionantes y analgésicas. También se utiliza para dar sabor a una gran variedad de alimentos y bebidas.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La menta es un género de plantas herbáceas aromáticas de la familia Lamiaceae. Existen diversas especies, como la menta piperita (Mentha × piperita) y la hierbabuena (Mentha spicata). Se caracteriza por su aroma y sabor refrescantes, debido a la presencia de mentol en sus hojas.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La menta ha sido utilizada con fines culinarios y medicinales desde la antigüedad. Los antiguos egipcios la empleaban para tratar la indigestión, y se han encontrado hojas secas de menta en pirámides que datan del 1000 a.C. Los griegos y romanos también la valoraban por sus propiedades digestivas y la utilizaban para aromatizar vinos y salsas. A lo largo de la historia, ha sido un remedio popular para diversos malestares estomacales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Ecofarma. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas para la Tos - Ecofarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="inicio.html">🌿 Ecofarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="text-success fw-bold">Plantas para la Tos</h1>
+            <p class="lead text-muted">Soluciones naturales para calmar la garganta y facilitar la expulsión de mucosidad.</p>
+        </div>
+
+        <div class="card bg-info-subtle border-info shadow-sm mb-5">
+            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones</div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Prepara correctamente las infusiones y no excedas las dosis. No prolongues el tratamiento más de 7-10 días sin supervisión.</li>
+                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Asegúrate de usar la especie botánica correcta. Compra en herboristerías o proveedores confiables.</li>
+                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Consulta a un profesional si tienes enfermedades respiratorias graves, estás embarazada o en lactancia.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="../img/tomillo.jpg" class="card-img-top" alt="Tomillo">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">1. Tomillo (Thymus vulgaris)</h5>
+                        <p class="card-text"><strong>Usos:</strong> Beber una infusión tibia 2 veces al día, endulzada con miel si se desea.</p>
+                        <p class="card-text"><strong>Definición:</strong> Su principio activo, el timol, es un potente antiséptico y expectorante natural. Favorece la expulsión de mucosidades y alivia la garganta irritada.</p>
+                        <p class="card-text mt-auto"><strong>Historia:</strong> En la Grecia antigua, Hipócrates lo recomendaba para afecciones respiratorias. En la Edad Media se usaba como remedio contra la tos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="../img/gordolobo.jpg" class="card-img-top" alt="Gordolobo">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success">2. Gordolobo (Verbascum thapsus)</h5>
+                        <p class="card-text"><strong>Usos:</strong> Infusionar sus flores secas. Es muy importante colar con cuidado para eliminar la pelusa, que puede ser irritante.</p>
+                        <p class="card-text"><strong>Definición:</strong> Contiene mucílagos y saponinas con acción expectorante y calmante. Suaviza las mucosas respiratorias y relaja los músculos bronquiales.</p>
+                        <p class="card-text mt-auto"><strong>Historia:</strong> Conocido como "vela de los romanos" porque sus tallos secos se usaban como antorchas. Se utilizaba para tratar "toses del diablo" (toses persistentes).</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Ecofarma. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

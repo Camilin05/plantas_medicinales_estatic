@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas para Heridas - Ecofarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 Ecofarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="text-success fw-bold">Plantas para Tratar Heridas</h1>
+            <p class="lead text-muted">Soluciones naturales para cortes, rasguños y heridas superficiales.</p>
+        </div>
+
+        <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
+            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones Clave</div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i><strong>Identificación precisa:</strong> Asegúrate de identificar correctamente cualquier planta antes de usarla. Una confusión podría ser tóxica.</li>
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i><strong>Uso adecuado:</strong> No apliques remedios caseros en heridas profundas o infectadas. Lava siempre la herida antes de cualquier aplicación.</li>
+                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i><strong>Base científica:</strong> Prioriza el uso de plantas cuya eficacia y seguridad estén validadas por estudios científicos.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionPlantasHeridas">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHierbaSanRoberto">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHierbaSanRoberto" aria-expanded="false" aria-controls="collapseHierbaSanRoberto">
+                        <strong>1. Hierba de San Roberto (Geranium robertianum)</strong>
+                    </button>
+                </h2>
+                <div id="collapseHierbaSanRoberto" class="accordion-collapse collapse" aria-labelledby="headingHierbaSanRoberto" data-bs-parent="#accordionPlantasHeridas">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/hierba_san_roberto.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Hierba de San Roberto">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Tritura hojas frescas hasta obtener una pasta. Aplica directamente sobre cortes o rasguños y cubre con una gasa. Cambia cada 8 horas.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Posee propiedades astringentes, antimicrobianas y cicatrizantes gracias a sus taninos y flavonoides. Favorece la detención del sangrado y la regeneración de la piel.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Conocida desde la Edad Media como la "planta de los monjes", fue cultivada en monasterios para tratar heridas y hemorragias leves. La fitoterapia moderna la ha revalorizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPasionaria">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePasionaria" aria-expanded="false" aria-controls="collapsePasionaria">
+                        <strong>2. Pasionaria Azul (Passiflora caerulea)</strong>
+                    </button>
+                </h2>
+                <div id="collapsePasionaria" class="accordion-collapse collapse" aria-labelledby="headingPasionaria" data-bs-parent="#accordionPlantasHeridas">
+                      <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/pasionaria_azul.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Pasionaria Azul">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Macera 30 g de hojas secas en 250 ml de aceite vegetal durante 15 días. Cuela y aplica el aceite sobre heridas 2 veces al día.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Esta trepadora nativa de Sudamérica contiene flavonoides y alcaloides que le dan efectos antiinflamatorios y antimicrobianos, favoreciendo la desinfección.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Culturas indígenas como los guaraníes y mapuches aplicaban sus hojas sobre heridas. Los misioneros jesuitas difundieron su uso en Europa en el siglo XVIII.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMalva">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMalva" aria-expanded="false" aria-controls="collapseMalva">
+                        <strong>3. Malva Silvestre (Malva sylvestris)</strong>
+                    </button>
+                </h2>
+                <div id="collapseMalva" class="accordion-collapse collapse" aria-labelledby="headingMalva" data-bs-parent="#accordionPlantasHeridas">
+                      <div class="accordion-body">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/malva_silvestre.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Malva Silvestre">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Prepara una infusión con 30 g de flores y hojas secas en 1 litro de agua. Usa el líquido tibio para lavar heridas 3 veces al día.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Sus flores y hojas contienen mucílagos que forman una película protectora sobre las lesiones, favoreciendo la hidratación y cicatrización.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Desde el Imperio Romano era considerada un remedio esencial para afecciones de piel. Los médicos árabes medievales ampliaron su uso tópico en Europa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Ecofarma. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

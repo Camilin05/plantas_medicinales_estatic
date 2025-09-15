@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas para Quemaduras - Ecofarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 Ecofarm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="text-success fw-bold">Plantas para Quemaduras Leves</h1>
+            <p class="lead text-muted">Remedios naturales para aliviar, desinflamar y regenerar la piel.</p>
+        </div>
+
+        <div class="card bg-warning-subtle border-warning shadow-sm mb-5">
+            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones Importantes</div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Solo usar en quemaduras leves o de primer grado.</li>
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Siempre lavar la zona con abundante agua fría antes de aplicar cualquier remedio.</li>
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>No aplicar en quemaduras con ampollas abiertas o heridas infectadas sin supervisión médica.</li>
+                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Si el dolor o enrojecimiento empeora, acude a un profesional de la salud.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionPlantas">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAloe">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAloe" aria-expanded="false" aria-controls="collapseAloe">
+                        <strong>1. Aloe Vera (Aloe barbadensis miller)</strong>
+                    </button>
+                </h2>
+                <div id="collapseAloe" class="accordion-collapse collapse" aria-labelledby="headingAloe" data-bs-parent="#accordionPlantas">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/alovera.png" class="img-fluid rounded shadow-sm mb-3" alt="Aloe Vera">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Corta una hoja fresca, extrae el gel transparente y aplícalo directamente sobre la quemadura limpia. Repite varias veces al día para calmar, hidratar y regenerar.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Conocida como la "planta de la inmortalidad" por los egipcios, su gel contiene propiedades cicatrizantes, antiinflamatorias y calmantes, siendo un remedio universal para afecciones cutáneas.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Usada desde hace más de 6,000 años por civilizaciones como la egipcia, griega y romana. Cleopatra la usaba en su rutina de belleza y Cristóbal Colón la llevaba en sus barcos para curar heridas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCalendula">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalendula" aria-expanded="false" aria-controls="collapseCalendula">
+                        <strong>2. Caléndula (Calendula officinalis)</strong>
+                    </button>
+                </h2>
+                <div id="collapseCalendula" class="accordion-collapse collapse" aria-labelledby="headingCalendula" data-bs-parent="#accordionPlantas">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <img src="../img/calendula.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Caléndula">
+                            </div>
+                            <div class="col-md-8">
+                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
+                                <p>Aplicar en forma de pomadas, cremas o compresas frías (usando una infusión de sus pétalos) para reducir la inflamación y prevenir infecciones.</p>
+                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
+                                <p>Planta con flores de color amarillo o naranja intenso. Sus flavonoides y aceites esenciales le otorgan un potente efecto antiinflamatorio, antiséptico y cicatrizante, ideal para pieles sensibles.</p>
+                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
+                                <p>Cultivada en Europa desde la Antigüedad, especialmente en jardines monásticos de la Edad Media. Se usaba tanto en la cocina como en la medicina para tratar heridas y problemas de piel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </main>
+
+    <footer class="mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Ecofarma. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
