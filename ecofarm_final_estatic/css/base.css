@@ -1,0 +1,41 @@
+/* ---- Estilos Generales y Fondo ---- */
+body {
+    /* Fondo con imagen y capa semitransparente */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+        url('../img/fondo.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    /* Ajuste para la barra de navegación fija (fixed-top) */
+    padding-top: 70px; 
+}
+
+/* ---- Estilos para la Barra de Navegación ---- */
+.navbar {
+    background-color: #4CAF50; /* Verde principal */
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    background-color: #2E7D32; /* Verde aún más oscuro */
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+

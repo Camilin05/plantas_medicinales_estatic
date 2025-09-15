@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %} {# Asegúrate de que esta línea esté para cargar archivos estáticos #}
+
+{% block title %}<title>Ecofarma - Tu Herbario Digital</title>{% endblock %}
+
+{% block content %}
+{# ========= SECCIÓN DE BIENVENIDA (HERO) ========= #}
+<div class="p-5 mb-4 rounded-3 text-center shadow-sm">
+    <div class="container-fluid py-5">
+        {# Aquí puedes poner tu logo. Asegúrate de guardar la imagen en la carpeta static/plantas/img/ #}
+        <img src="{% static 'img/sinfondo.png' %}" class="img-fluid mb-4" alt="Logo Ecofarma" style="max-width: 500px;">
+        <h1 class="display-5 fw-bold text-success">Te damos la bienvenida a EcoFarm</h1>
+        <p class="col-md-10 fs-4 mx-auto">
+            Un espacio creado con el propósito de acercarte al maravilloso mundo de las plantas medicinales. Aquí encontrarás información confiable, organizada y accesible sobre los usos terapéuticos de diversas especies vegetales.
+        </p>
+        <a class="btn btn-success btn-lg mt-3" href="{% url 'plantas:lista_plantas' %}" role="button">Explorar Catálogo de Plantas</a>
+        <a class="btn btn-outline-success btn-lg mt-3 ms-2" href="{% url 'plantas:lista_sintomas' %}" role="button">Buscar por Síntoma</a>
+    </div>
+</div>
+
+{# ========= SECCIÓN ¿SABÍAS QUÉ? ========= #}
+<div class="row align-items-center g-5 py-5">
+    <div class="col-lg-6">
+        <h2 class="display-6 fw-bold lh-1 mb-3 text-success">¿Sabías qué? Un legado ancestral</h4>
+        <p class="lead">
+            Desde tiempos inmemoriales, las plantas medicinales han sido aliadas esenciales en el cuidado de la salud. Civilizaciones antiguas como la egipcia, la china y las culturas indígenas americanas desarrollaron complejos sistemas de medicina basados en la naturaleza.
+        </p>
+        <p>
+            El conocimiento botánico, transmitido de generación en generación, es la base de la fitoterapia moderna. Hoy, honramos este legado ofreciendo información que une la sabiduría ancestral con la ciencia.
+        </p>
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+        {# Guarda tu imagen en static/plantas/img/ #}
+        <img src="{% static 'img/history.jpg' %}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Historia de las plantas medicinales" loading="lazy">
+    </div>
+</div>
+
+<hr class="my-5">
+
+{# ========= SECCIÓN DE OBJETIVOS ========= #}
+<div class="container px-4 py-5" id="objetivos">
+    <h2 class="pb-2 border-bottom text-center text-success fw-bold">Nuestros Objetivos</h2>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-book-half text-success" viewBox="0 0 16 16"><path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388 1.17.953.713 1.04 1.765.944 2.887a8.368 8.368 0 0 1-.224.977c-.11.324-.27.68-.428 1.021-.158.341-.33.656-.513.929-.182.273-.38.516-.615.724a.71.71 0 0 1-.214.134c-.308.152-.66.274-1.01.36-.35.087-.72.14-1.08.168-.36.028-.71.04-1.03.04-1.137 0-2.2-.246-3.112-1.452A3.176 3.176 0 0 1 2.25 5.511c.323-.45.74-1.011 1.228-1.532a.71.71 0 0 1 .214-.134c.308-.152.66-.274 1.01-.36.35-.087.72-.14 1.08-.168.36-.028.71-.04 1.03-.04.42 0 .83.036 1.2.108.37.072.7.194 1.006.342.036.017.07.036.104.057.247.152.47.357.67.615.198.257.37.564.524.912.155.347.295.748.38 1.19.086.44.1.844.067 1.203-.032.358-.08.682-.143.972a.5.5 0 0 1-.632.393c-.427-.103-.84-.23-1.23-.39-.195-.08-.39-.16-.574-.242a3.535 3.535 0 0 0-.214-.093c-.262-.1-.53-.175-.803-.227-.273-.052-.55-.08-.82-.08-.48 0-.93.06-1.34.18-.41.12-.79.31-1.12.56-.33.25-.6.58-.79 1-.19.42-.28.9-.26 1.42.02.52.18 1.02.45 1.44.27.42.64.77 1.1.98.46.21.98.31 1.52.31.29 0 .57-.02.84-.06.27-.04.53-.1.78-.18.25-.08.49-.18.72-.31a.71.71 0 0 0 .214-.134c.234-.208.433-.45.615-.724.183-.273.355-.588.513-.929.158-.34.318-.7.428-1.021.11-.298.19-.62.224-.977.096-1.121-.01-2.174-.944-2.887-.885-.647-2.154-1.046-3.388-1.17-1.33-.134-2.458.063-3.112.752z"/></svg>
+        </div>
+        <div>
+            <h4 class="fw-bold">Información Confiable</h4>
+            <p>Investigar y recopilar información verificada sobre las propiedades medicinales de diversas plantas y su efectividad en el tratamiento de diferentes síntomas.</p>
+        </div>
+        </div>
+        <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-display text-success" viewBox="0 0 16 16"><path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .553.145h10.004c.194 0 .38-.046.553-.145a.758.758 0 0 0 .302-.254c.067-.1.145-.277.145-.602V4.01c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.464 1.464 0 0 0 13.004 3H2.996a1.464 1.464 0 0 0-.553.145z"/></svg>
+        </div>
+        <div>
+            <h4 class="fw-bold">Diseño Accesible</h4>
+            <p>Diseñar una página web que permita a los usuarios consultar de manera sencilla la relación entre síntomas y plantas, proporcionando información clara y veraz.</p>
+        </div>
+        </div>
+        <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-capsule text-success" viewBox="0 0 16 16"><path d="M1.828 8.9-8.9 1.827a4 4 0 1 1 5.657-5.657l7.07 7.071A4 4 0 1 1 1.827 8.9Zm5.657-5.657a3 3 0 1 0-4.243 4.243L10.5 11.757a3 3 0 1 0 4.243-4.243L7.485 3.243Z"/></svg>
+        </div>
+        <div>
+            <h4 class="fw-bold">Uso Responsable</h4>
+            <p>Promover el conocimiento y el uso consciente de las plantas medicinales como una alternativa complementaria para el bienestar y la toma de decisiones informadas.</p>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
