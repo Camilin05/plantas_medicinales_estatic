@@ -1,8 +1,8 @@
 /* ---- Estilos Generales y Fondo ---- */
 body {
     /* Fondo con imagen y capa semitransparente */
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
         url('../img/fondo.png');
     background-size: cover;
     background-position: center center;
@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     
     /* Ajuste para la barra de navegación fija (fixed-top) */
-    padding-top: 70px; 
+    padding-top: 70px;
 }
 
 /* ---- Estilos para la Barra de Navegación ---- */
@@ -39,14 +39,9 @@ body {
     color: #ffffff !important;
 }
 
-/* Estilo para que todas las tarjetas tengan la misma altura */
-.card-sintoma {
-    height: 100%;
-}
-.card-sintoma .card-body {
-    flex-grow: 1;
-}
-.card-icon {
-    font-size: 2.5rem; /* Tamaño del icono */
-    margin-bottom: 0.5rem;
+/* ---- Estilos para las imágenes de las tarjetas ---- */
+.card-img-top {
+    max-height: 200px; /* Puedes ajustar este valor si quieres que sean más altas o bajas */
+    object-fit: cover; /* Esto asegura que la imagen cubra el espacio sin deformarse */
+    width: 100%;
 }
