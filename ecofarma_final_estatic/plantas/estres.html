@@ -1,288 +1,856 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantas para el Estrés - EcoFarma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../lista_sintomas.html"
+                  >😕 Síntomas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../nosotros.html"
+                  >🙋‍♂️ Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="text-success fw-bold">Plantas para el Estrés</h1>
-            <p class="lead text-muted">Hierbas adaptógenas y relajantes para manejar la tensión diaria y calmar el sistema nervioso.</p>
-        </div>
+      <div class="text-center mb-5">
+        <h1 class="text-success fw-bold">Plantas para el Estrés</h1>
+        <p class="lead text-muted">
+          Hierbas adaptógenas y relajantes para manejar la tensión diaria y
+          calmar el sistema nervioso.
+        </p>
+      </div>
 
-        <div class="card bg-info-subtle border-info shadow-sm mb-5">
-            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones</div>
-            <div class="card-body">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Realiza actividad física de forma regular, ya que el ejercicio es un potente reductor del estrés.</li>
-                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Practica técnicas de relajación como la meditación, la respiración profunda o el yoga para calmar tu mente.</li>
-                    <li><i class="bi bi-check-circle-fill text-info me-2"></i>Duerme lo suficiente, ya que un buen descanso es fundamental para que el cuerpo y la mente se recuperen del estrés.</li>
-                </ul>
-            </div>
+      <div class="card bg-info-subtle border-info shadow-sm mb-5">
+        <div class="card-header fw-bold">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones
         </div>
+        <div class="card-body">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="bi bi-check-circle-fill text-info me-2"></i>Realiza
+              actividad física de forma regular, ya que el ejercicio es un
+              potente reductor del estrés.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-info me-2"></i>Practica
+              técnicas de relajación como la meditación, la respiración profunda
+              o el yoga para calmar tu mente.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-info me-2"></i>Duerme lo
+              suficiente, ya que un buen descanso es fundamental para que el
+              cuerpo y la mente se recuperen del estrés.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="accordion" id="accordionPlantas">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading1">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                        <strong>1. Ashwagandha (Withania somnifera)</strong>
-                    </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"><img src="../img/ashwagandha.jpg" class="img-fluid rounded shadow-sm" alt="Ashwagandha"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La ashwagandha se utiliza principalmente como un adaptógeno, lo que significa que ayuda al cuerpo a manejar el estrés. Se consume para reducir la ansiedad, mejorar la calidad del sueño y aumentar la resistencia física y mental. También se ha utilizado para mejorar la función cognitiva y fortalecer el sistema inmunológico. Sus propiedades antiinflamatorias y antioxidantes contribuyen a su efecto protector general.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La ashwagandha, conocida científicamente como Withania somnifera, es un arbusto de hoja perenne que crece en la India, Oriente Medio y partes de África. La raíz y las bayas de la planta se utilizan para preparar extractos, polvos y cápsulas con fines medicinales. Es una de las hierbas más importantes en la medicina ayurvédica, el sistema de medicina tradicional de la India.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El uso de la ashwagandha se remonta a más de 3,000 años en la medicina ayurvédica. Tradicionalmente, ha sido venerada por sus propiedades rejuvenecedoras y se le conoce como el "ginseng indio". Su nombre en sánscrito se traduce como "olor a caballo", lo que alude tanto a su peculiar aroma como a la creencia de que confiere la fuerza y vitalidad de un caballo. A lo largo de los siglos, se ha utilizado para tratar una amplia variedad de dolencias relacionadas con el estrés y el agotamiento.</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="accordion" id="accordionPlantas">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="false"
+              aria-controls="collapse1"
+            >
+              <strong>1. Ashwagandha (Withania somnifera)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading1"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/ashwagandha.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt="Ashwagandha"
+                  />
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                        <strong>2. Rodiola (Rhodiola rosea)</strong>
-                    </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La rodiola es otro adaptógeno que ayuda al cuerpo a resistir el estrés físico, químico y biológico. Se utiliza para combatir la fatiga, mejorar el rendimiento mental y físico, y aliviar los síntomas de la ansiedad y la depresión.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La rodiola es una planta que crece en las regiones frías y montañosas de Europa y Asia. Sus raíces contienen más de 140 compuestos activos, incluyendo las rosavinas y los salidrosidos, que se cree que son responsables de sus efectos adaptogénicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La rodiola ha sido utilizada en la medicina tradicional de Rusia y los países escandinavos durante siglos. Los vikingos la usaban para aumentar su resistencia, y los médicos rusos la han investigado por sus efectos sobre el rendimiento y la fatiga.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La ashwagandha se utiliza principalmente como un adaptógeno,
+                    lo que significa que ayuda al cuerpo a manejar el estrés. Se
+                    consume para reducir la ansiedad, mejorar la calidad del
+                    sueño y aumentar la resistencia física y mental. También se
+                    ha utilizado para mejorar la función cognitiva y fortalecer
+                    el sistema inmunológico. Sus propiedades antiinflamatorias y
+                    antioxidantes contribuyen a su efecto protector general.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La ashwagandha, conocida científicamente como Withania
+                    somnifera, es un arbusto de hoja perenne que crece en la
+                    India, Oriente Medio y partes de África. La raíz y las bayas
+                    de la planta se utilizan para preparar extractos, polvos y
+                    cápsulas con fines medicinales. Es una de las hierbas más
+                    importantes en la medicina ayurvédica, el sistema de
+                    medicina tradicional de la India.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El uso de la ashwagandha se remonta a más de 3,000 años en
+                    la medicina ayurvédica. Tradicionalmente, ha sido venerada
+                    por sus propiedades rejuvenecedoras y se le conoce como el
+                    "ginseng indio". Su nombre en sánscrito se traduce como
+                    "olor a caballo", lo que alude tanto a su peculiar aroma
+                    como a la creencia de que confiere la fuerza y vitalidad de
+                    un caballo. A lo largo de los siglos, se ha utilizado para
+                    tratar una amplia variedad de dolencias relacionadas con el
+                    estrés y el agotamiento.
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                        <strong>3. Albahaca sagrada (Ocimum tenuiflorum)</strong>
-                    </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La albahaca sagrada, también conocida como tulsi, es un adaptógeno que ayuda al cuerpo a lidiar con el estrés. Se toma en forma de infusión para calmar la mente, reducir la ansiedad y mejorar el estado de ánimo.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La albahaca sagrada es una planta aromática originaria de la India. Contiene compuestos como el eugenol y el ácido ursólico, que tienen propiedades antiestrés, antioxidantes y antiinflamatorias.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>En el hinduismo, la albahaca sagrada es venerada como una planta sagrada y se considera la encarnación de la diosa Lakshmi. Se ha utilizado en la medicina ayurvédica durante miles de años para promover la longevidad y tratar una variedad de dolencias.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        <strong>4. Ginseng siberiano (Eleutherococcus senticosus)</strong>
-                    </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>El ginseng siberiano es un adaptógeno que ayuda a aumentar la resistencia al estrés, a combatir la fatiga y a mejorar el rendimiento físico y mental. Se toma en forma de extracto, cápsulas o infusión.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>A pesar de su nombre, el ginseng siberiano no es un verdadero ginseng. Es un arbusto leñoso originario del noreste de Asia. Sus raíces contienen eleuterósidos, compuestos que se cree que son responsables de sus efectos adaptogénicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El ginseng siberiano ha sido utilizado en la medicina tradicional china durante más de 2.000 años para aumentar la energía, mejorar la memoria y prevenir las enfermedades. Los atletas rusos lo han utilizado para mejorar su rendimiento.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                        <strong>5. Schisandra (Schisandra chinensis)</strong>
-                    </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La schisandra es un adaptógeno que ayuda a proteger el cuerpo del estrés, a mejorar la concentración y a aumentar la resistencia. Se toma en forma de extracto, cápsulas o bayas secas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La schisandra es una enredadera leñosa originaria de China y Rusia. Sus bayas se conocen como "la fruta de los cinco sabores" porque se dice que tienen los cinco sabores básicos: dulce, salado, amargo, picante y ácido. Contienen lignanos, compuestos que se cree que son responsables de sus efectos adaptogénicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La schisandra ha sido utilizada en la medicina tradicional china durante siglos para tonificar los riñones, calmar el corazón y proteger el hígado. Se consideraba una hierba que promovía la longevidad y la belleza.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading6">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                        <strong>6. Gotu kola (Centella asiatica)</strong>
-                    </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>El gotu kola se utiliza para reducir la ansiedad, mejorar la memoria y la concentración, y promover la salud de la piel. Se toma en forma de infusión, cápsulas o extracto.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El gotu kola es una planta herbácea perenne originaria de Asia. Contiene triterpenoides, compuestos que se cree que son responsables de sus efectos sobre el cerebro y la piel. Ayuda a mejorar la circulación y a reducir la inflamación.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>Conocida como la "hierba de la longevidad", el gotu kola ha sido utilizado en la medicina ayurvédica y china durante miles de años. Se decía que los elefantes, conocidos por su larga vida, comían gotu kola.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading7">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                        <strong>7. Bacopa (Bacopa monnieri)</strong>
-                    </button>
-                </h2>
-                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La bacopa, también conocida como brahmi, se utiliza para mejorar la memoria, la concentración y el aprendizaje. También ayuda a reducir la ansiedad y los efectos del estrés. Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La bacopa es una planta rastrera que crece en zonas pantanosas de la India y otras partes de Asia. Contiene bacósidos, compuestos que se cree que son responsables de sus efectos sobre el cerebro. Ayuda a proteger las células nerviosas y a mejorar la comunicación entre ellas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La bacopa ha sido utilizada en la medicina ayurvédica durante siglos como un tónico cerebral y un rejuvenecedor. Se daba a los estudiantes para mejorar su rendimiento académico.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading8">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                        <strong>8. Reishi (Ganoderma lucidum)</strong>
-                    </button>
-                </h2>
-                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>El reishi es un hongo adaptógeno que ayuda al cuerpo a lidiar con el estrés. Se utiliza para calmar la mente, mejorar el sueño y fortalecer el sistema inmunológico. Se toma en forma de extracto, cápsulas o infusión.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El reishi es un hongo que crece en los árboles en descomposición. Contiene polisacáridos y triterpenos, compuestos que se cree que son responsables de sus efectos sobre el sistema inmunológico y el sistema nervioso.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>Conocido como el "hongo de la inmortalidad", el reishi ha sido utilizado en la medicina tradicional china durante más de 2.000 años. Se consideraba un tónico superior que promovía la longevidad y la salud en general.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading9">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                        <strong>9. Cordyceps (Cordyceps sinensis)</strong>
-                    </button>
-                </h2>
-                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>El cordyceps es un hongo adaptógeno que ayuda a combatir la fatiga, a mejorar el rendimiento físico y a aumentar la resistencia al estrés. Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El cordyceps es un hongo parásito que crece en las larvas de los insectos en las altas montañas de China. Contiene cordicepina y otros compuestos que se cree que son responsables de sus efectos energizantes y adaptogénicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El cordyceps ha sido utilizado en la medicina tradicional china y tibetana durante siglos para tratar la fatiga, la debilidad y las enfermedades respiratorias. Se consideraba un tónico valioso que podía restaurar la energía y la vitalidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading10">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        <strong>10. Melena de león (Hericium erinaceus)</strong>
-                    </button>
-                </h2>
-                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La melena de león es un hongo que se utiliza para mejorar la función cognitiva, la memoria y la concentración. También puede ayudar a reducir la ansiedad y la depresión. Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La melena de león es un hongo comestible que crece en los árboles de madera dura. Contiene hericenonas y erinacinas, compuestos que se cree que estimulan el crecimiento de las células nerviosas y protegen el cerebro.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La melena de león ha sido utilizada en la medicina tradicional china y japonesa durante siglos para tratar problemas digestivos y fortalecer el sistema inmunológico. Su uso para mejorar la función cerebral es un área de investigación más reciente.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading11">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                        <strong>11. Azafrán (Crocus sativus)</strong>
-                    </button>
-                </h2>
-                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>El azafrán se utiliza para mejorar el estado de ánimo, reducir la ansiedad y aliviar los síntomas de la depresión. Se toma en forma de extracto o se utiliza como especia en la cocina.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El azafrán es una especia que se obtiene de los estigmas de la flor de Crocus sativus. Contiene crocina y safranal, compuestos que se cree que tienen efectos antidepresivos y ansiolíticos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El azafrán es una de las especias más caras del mundo y se ha utilizado durante siglos en la medicina tradicional persa para tratar la depresión. Se decía que traía alegría y felicidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mt-5">
-            <a href="dolor_estomago.html" class="btn btn-outline-secondary">&laquo; Anterior</a>
-            <a href="problemas_menstruales.html" class="btn btn-outline-primary">Siguiente &raquo;</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+              aria-expanded="false"
+              aria-controls="collapse2"
+            >
+              <strong>2. Rodiola (Rhodiola rosea)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse2"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading2"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La rodiola es otro adaptógeno que ayuda al cuerpo a resistir
+                    el estrés físico, químico y biológico. Se utiliza para
+                    combatir la fatiga, mejorar el rendimiento mental y físico,
+                    y aliviar los síntomas de la ansiedad y la depresión.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La rodiola es una planta que crece en las regiones frías y
+                    montañosas de Europa y Asia. Sus raíces contienen más de 140
+                    compuestos activos, incluyendo las rosavinas y los
+                    salidrosidos, que se cree que son responsables de sus
+                    efectos adaptogénicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La rodiola ha sido utilizada en la medicina tradicional de
+                    Rusia y los países escandinavos durante siglos. Los vikingos
+                    la usaban para aumentar su resistencia, y los médicos rusos
+                    la han investigado por sus efectos sobre el rendimiento y la
+                    fatiga.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
-            <a href="../lista_sintomas.html" class="btn btn-success">Volver a síntomas</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+              aria-expanded="false"
+              aria-controls="collapse3"
+            >
+              <strong>3. Albahaca sagrada (Ocimum tenuiflorum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse3"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading3"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La albahaca sagrada, también conocida como tulsi, es un
+                    adaptógeno que ayuda al cuerpo a lidiar con el estrés. Se
+                    toma en forma de infusión para calmar la mente, reducir la
+                    ansiedad y mejorar el estado de ánimo.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La albahaca sagrada es una planta aromática originaria de la
+                    India. Contiene compuestos como el eugenol y el ácido
+                    ursólico, que tienen propiedades antiestrés, antioxidantes y
+                    antiinflamatorias.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    En el hinduismo, la albahaca sagrada es venerada como una
+                    planta sagrada y se considera la encarnación de la diosa
+                    Lakshmi. Se ha utilizado en la medicina ayurvédica durante
+                    miles de años para promover la longevidad y tratar una
+                    variedad de dolencias.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4"
+            >
+              <strong>4. Ginseng siberiano (Eleutherococcus senticosus)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse4"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading4"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El ginseng siberiano es un adaptógeno que ayuda a aumentar
+                    la resistencia al estrés, a combatir la fatiga y a mejorar
+                    el rendimiento físico y mental. Se toma en forma de
+                    extracto, cápsulas o infusión.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    A pesar de su nombre, el ginseng siberiano no es un
+                    verdadero ginseng. Es un arbusto leñoso originario del
+                    noreste de Asia. Sus raíces contienen eleuterósidos,
+                    compuestos que se cree que son responsables de sus efectos
+                    adaptogénicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El ginseng siberiano ha sido utilizado en la medicina
+                    tradicional china durante más de 2.000 años para aumentar la
+                    energía, mejorar la memoria y prevenir las enfermedades. Los
+                    atletas rusos lo han utilizado para mejorar su rendimiento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse5"
+              aria-expanded="false"
+              aria-controls="collapse5"
+            >
+              <strong>5. Schisandra (Schisandra chinensis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse5"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading5"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La schisandra es un adaptógeno que ayuda a proteger el
+                    cuerpo del estrés, a mejorar la concentración y a aumentar
+                    la resistencia. Se toma en forma de extracto, cápsulas o
+                    bayas secas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La schisandra es una enredadera leñosa originaria de China y
+                    Rusia. Sus bayas se conocen como "la fruta de los cinco
+                    sabores" porque se dice que tienen los cinco sabores
+                    básicos: dulce, salado, amargo, picante y ácido. Contienen
+                    lignanos, compuestos que se cree que son responsables de sus
+                    efectos adaptogénicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La schisandra ha sido utilizada en la medicina tradicional
+                    china durante siglos para tonificar los riñones, calmar el
+                    corazón y proteger el hígado. Se consideraba una hierba que
+                    promovía la longevidad y la belleza.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse6"
+              aria-expanded="false"
+              aria-controls="collapse6"
+            >
+              <strong>6. Gotu kola (Centella asiatica)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse6"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading6"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El gotu kola se utiliza para reducir la ansiedad, mejorar la
+                    memoria y la concentración, y promover la salud de la piel.
+                    Se toma en forma de infusión, cápsulas o extracto.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El gotu kola es una planta herbácea perenne originaria de
+                    Asia. Contiene triterpenoides, compuestos que se cree que
+                    son responsables de sus efectos sobre el cerebro y la piel.
+                    Ayuda a mejorar la circulación y a reducir la inflamación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocida como la "hierba de la longevidad", el gotu kola ha
+                    sido utilizado en la medicina ayurvédica y china durante
+                    miles de años. Se decía que los elefantes, conocidos por su
+                    larga vida, comían gotu kola.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse7"
+              aria-expanded="false"
+              aria-controls="collapse7"
+            >
+              <strong>7. Bacopa (Bacopa monnieri)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse7"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading7"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La bacopa, también conocida como brahmi, se utiliza para
+                    mejorar la memoria, la concentración y el aprendizaje.
+                    También ayuda a reducir la ansiedad y los efectos del
+                    estrés. Se toma en forma de extracto o cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La bacopa es una planta rastrera que crece en zonas
+                    pantanosas de la India y otras partes de Asia. Contiene
+                    bacósidos, compuestos que se cree que son responsables de
+                    sus efectos sobre el cerebro. Ayuda a proteger las células
+                    nerviosas y a mejorar la comunicación entre ellas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La bacopa ha sido utilizada en la medicina ayurvédica
+                    durante siglos como un tónico cerebral y un rejuvenecedor.
+                    Se daba a los estudiantes para mejorar su rendimiento
+                    académico.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse8"
+              aria-expanded="false"
+              aria-controls="collapse8"
+            >
+              <strong>8. Reishi (Ganoderma lucidum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse8"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading8"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El reishi es un hongo adaptógeno que ayuda al cuerpo a
+                    lidiar con el estrés. Se utiliza para calmar la mente,
+                    mejorar el sueño y fortalecer el sistema inmunológico. Se
+                    toma en forma de extracto, cápsulas o infusión.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El reishi es un hongo que crece en los árboles en
+                    descomposición. Contiene polisacáridos y triterpenos,
+                    compuestos que se cree que son responsables de sus efectos
+                    sobre el sistema inmunológico y el sistema nervioso.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocido como el "hongo de la inmortalidad", el reishi ha
+                    sido utilizado en la medicina tradicional china durante más
+                    de 2.000 años. Se consideraba un tónico superior que
+                    promovía la longevidad y la salud en general.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse9"
+              aria-expanded="false"
+              aria-controls="collapse9"
+            >
+              <strong>9. Cordyceps (Cordyceps sinensis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse9"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading9"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El cordyceps es un hongo adaptógeno que ayuda a combatir la
+                    fatiga, a mejorar el rendimiento físico y a aumentar la
+                    resistencia al estrés. Se toma en forma de extracto o
+                    cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El cordyceps es un hongo parásito que crece en las larvas de
+                    los insectos en las altas montañas de China. Contiene
+                    cordicepina y otros compuestos que se cree que son
+                    responsables de sus efectos energizantes y adaptogénicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El cordyceps ha sido utilizado en la medicina tradicional
+                    china y tibetana durante siglos para tratar la fatiga, la
+                    debilidad y las enfermedades respiratorias. Se consideraba
+                    un tónico valioso que podía restaurar la energía y la
+                    vitalidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse10"
+              aria-expanded="false"
+              aria-controls="collapse10"
+            >
+              <strong>10. Melena de león (Hericium erinaceus)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse10"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading10"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La melena de león es un hongo que se utiliza para mejorar la
+                    función cognitiva, la memoria y la concentración. También
+                    puede ayudar a reducir la ansiedad y la depresión. Se toma
+                    en forma de extracto o cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La melena de león es un hongo comestible que crece en los
+                    árboles de madera dura. Contiene hericenonas y erinacinas,
+                    compuestos que se cree que estimulan el crecimiento de las
+                    células nerviosas y protegen el cerebro.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La melena de león ha sido utilizada en la medicina
+                    tradicional china y japonesa durante siglos para tratar
+                    problemas digestivos y fortalecer el sistema inmunológico.
+                    Su uso para mejorar la función cerebral es un área de
+                    investigación más reciente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading11">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse11"
+              aria-expanded="false"
+              aria-controls="collapse11"
+            >
+              <strong>11. Azafrán (Crocus sativus)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse11"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading11"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El azafrán se utiliza para mejorar el estado de ánimo,
+                    reducir la ansiedad y aliviar los síntomas de la depresión.
+                    Se toma en forma de extracto o se utiliza como especia en la
+                    cocina.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El azafrán es una especia que se obtiene de los estigmas de
+                    la flor de Crocus sativus. Contiene crocina y safranal,
+                    compuestos que se cree que tienen efectos antidepresivos y
+                    ansiolíticos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El azafrán es una de las especias más caras del mundo y se
+                    ha utilizado durante siglos en la medicina tradicional persa
+                    para tratar la depresión. Se decía que traía alegría y
+                    felicidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5">
+        <a href="dolor_estomago.html" class="btn btn-outline-secondary"
+          >&laquo; Anterior</a
+        >
+        <a href="problemas_menstruales.html" class="btn btn-outline-primary"
+          >Siguiente &raquo;</a
+        >
+      </div>
+      <div class="text-center mt-5">
+        <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
+        <a href="../lista_sintomas.html" class="btn btn-success"
+          >Volver a síntomas</a
+        >
+      </div>
     </main>
 
-
     <footer class="mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
-            </div>
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
+        <div>
+          <a
+            href="https://www.instagram.com/as_juan_ca/"
+            class="text-white mx-2"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/573222614519" class="text-white mx-2"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"
+            ><i class="bi bi-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

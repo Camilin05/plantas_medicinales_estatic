@@ -1,361 +1,871 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantas para la Fiebre - EcoFarma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../lista_sintomas.html"
+                  >😕 Síntomas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../nosotros.html"
+                  >🙋‍♂️ Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="text-success fw-bold">Plantas para la Fiebre</h1>
-            <p class="lead text-muted">Remedios herbales que ayudan a regular la temperatura corporal y aliviar el malestar.</p>
+      <div class="text-center mb-5">
+        <h1 class="text-success fw-bold">Plantas para la Fiebre</h1>
+        <p class="lead text-muted">
+          Remedios herbales que ayudan a regular la temperatura corporal y
+          aliviar el malestar.
+        </p>
+      </div>
+
+      <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
+        <div class="card-header fw-bold">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones
+          Importantes
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>Consulta a
+              un médico si la fiebre dura más de 3 días o supera los 39°C.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>Evita el
+              uso de Sauce Blanco si eres alérgico a la aspirina o tomas
+              anticoagulantes.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i
+              >Complementa el uso de plantas con paños fríos y buena
+              hidratación.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>No excedas
+              las 2-3 tazas de infusión al día para evitar efectos secundarios.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPlantasFiebre">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSauce">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSauce"
+              aria-expanded="false"
+              aria-controls="collapseSauce"
+            >
+              <strong>1. Sauce Blanco (Salix alba)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseSauce"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSauce"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/sauce_blanco.jpg"
+                    class="img-fluid rounded shadow-sm mb-3"
+                    alt="Sauce Blanco"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Su corteza se usa en decocción (hervir 5g en 250ml de agua).
+                    Ideal en cuadros gripales como sustituto natural de
+                    analgésicos leves.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Su corteza contiene salicina, un compuesto que es el
+                    precursor natural de la aspirina, con acción
+                    antiinflamatoria y antipirética (reduce la fiebre).
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Su uso se remonta a la antigua Grecia, donde Hipócrates
+                    recomendaba masticar su corteza para la fiebre. En el siglo
+                    XIX se aisló la salicina, abriendo el camino para la
+                    aspirina.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
-            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones Importantes</div>
-            <div class="card-body">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Consulta a un médico si la fiebre dura más de 3 días o supera los 39°C.</li>
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Evita el uso de Sauce Blanco si eres alérgico a la aspirina o tomas anticoagulantes.</li>
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Complementa el uso de plantas con paños fríos y buena hidratación.</li>
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>No excedas las 2-3 tazas de infusión al día para evitar efectos secundarios.</li>
-                </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSauco">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSauco"
+              aria-expanded="false"
+              aria-controls="collapseSauco"
+            >
+              <strong>2. Saúco (Sambucus nigra)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseSauco"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSauco"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/sauco.jpg"
+                    class="img-fluid rounded shadow-sm mb-3"
+                    alt="Saúco"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Las infusiones de sus flores ayudan a inducir la sudoración
+                    para bajar la fiebre. Los extractos de sus bayas alivian la
+                    congestión y síntomas gripales.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Sus flores son diaforéticas (provocan sudor) y sus bayas
+                    tienen propiedades antivirales y antiinflamatorias. Sus
+                    hojas y tallos crudos son tóxicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Usado tradicionalmente en la Europa medieval como remedio
+                    para resfriados y fiebre. Estudios modernos confirman que
+                    sus extractos reducen la duración y severidad de la gripe.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="accordion" id="accordionPlantasFiebre">
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSauce">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauce" aria-expanded="false" aria-controls="collapseSauce">
-                        <strong>1. Sauce Blanco (Salix alba)</strong>
-                    </button>
-                </h2>
-                <div id="collapseSauce" class="accordion-collapse collapse" aria-labelledby="headingSauce" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center">
-                                <img src="../img/sauce_blanco.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Sauce Blanco">
-                            </div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Su corteza se usa en decocción (hervir 5g en 250ml de agua). Ideal en cuadros gripales como sustituto natural de analgésicos leves.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Su corteza contiene salicina, un compuesto que es el precursor natural de la aspirina, con acción antiinflamatoria y antipirética (reduce la fiebre).</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Su uso se remonta a la antigua Grecia, donde Hipócrates recomendaba masticar su corteza para la fiebre. En el siglo XIX se aisló la salicina, abriendo el camino para la aspirina.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMilenrama">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMilenrama"
+              aria-expanded="false"
+              aria-controls="collapseMilenrama"
+            >
+              <strong>3. Milenrama (Achillea millefolium)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseMilenrama"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingMilenrama"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
                 </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSauco">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSauco" aria-expanded="false" aria-controls="collapseSauco">
-                        <strong>2. Saúco (Sambucus nigra)</strong>
-                    </button>
-                </h2>
-                <div id="collapseSauco" class="accordion-collapse collapse" aria-labelledby="headingSauco" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center">
-                                <img src="../img/sauco.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Saúco">
-                            </div>  
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Las infusiones de sus flores ayudan a inducir la sudoración para bajar la fiebre. Los extractos de sus bayas alivian la congestión y síntomas gripales.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Sus flores son diaforéticas (provocan sudor) y sus bayas tienen propiedades antivirales y antiinflamatorias. Sus hojas y tallos crudos son tóxicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Usado tradicionalmente en la Europa medieval como remedio para resfriados y fiebre. Estudios modernos confirman que sus extractos reducen la duración y severidad de la gripe.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión caliente de milenrama induce la sudoración,
+                    ayudando a reducir la fiebre de forma natural.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Es una planta diaforética, lo que significa que promueve la
+                    sudoración y ayuda al cuerpo a liberar calor.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocida como "la hierba de los soldados", se dice que
+                    Aquiles la utilizó para curar las heridas de sus hombres. Su
+                    uso para la fiebre es igualmente antiguo.
+                  </p>
                 </div>
+              </div>
             </div>
-            
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMilenrama">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMilenrama" aria-expanded="false" aria-controls="collapseMilenrama">
-                        <strong>3. Milenrama (Achillea millefolium)</strong>
-                    </button>
-                </h2>
-                <div id="collapseMilenrama" class="accordion-collapse collapse" aria-labelledby="headingMilenrama" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión caliente de milenrama induce la sudoración, ayudando a reducir la fiebre de forma natural.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Es una planta diaforética, lo que significa que promueve la sudoración y ayuda al cuerpo a liberar calor.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Conocida como "la hierba de los soldados", se dice que Aquiles la utilizó para curar las heridas de sus hombres. Su uso para la fiebre es igualmente antiguo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEupatorio">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEupatorio" aria-expanded="false" aria-controls="collapseEupatorio">
-                        <strong>4. Eupatorio (Eupatorium perfoliatum)</strong>
-                    </button>
-                </h2>
-                <div id="collapseEupatorio" class="accordion-collapse collapse" aria-labelledby="headingEupatorio" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Se toma en infusión para aliviar los síntomas de la gripe y el resfriado, incluyendo la fiebre y los dolores corporales.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>También conocida como "huesos rotos", esta planta es un potente diaforético y estimulante del sistema inmunológico.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Los nativos americanos la utilizaban ampliamente para tratar fiebres, especialmente la "fiebre de los huesos rotos" o dengue.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTila">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTila" aria-expanded="false" aria-controls="collapseTila">
-                        <strong>5. Tila (Tilia)</strong>
-                    </button>
-                </h2>
-                <div id="collapseTila" class="accordion-collapse collapse" aria-labelledby="headingTila" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión de flores de tila ayuda a inducir el sueño y la sudoración, siendo útil en casos de fiebre por resfriado.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Sus propiedades diaforéticas y relajantes ayudan al cuerpo a combatir la fiebre mientras promueven el descanso necesario.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Un remedio popular en Europa durante siglos para calmar los nervios y aliviar los síntomas del resfriado y la gripe.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMenta">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenta" aria-expanded="false" aria-controls="collapseMenta">
-                        <strong>6. Menta (Mentha piperita)</strong>
-                    </button>
-                </h2>
-                <div id="collapseMenta" class="accordion-collapse collapse" aria-labelledby="headingMenta" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión de menta caliente puede inducir la sudoración, mientras que una infusión fría puede ayudar a refrescar el cuerpo.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>El mentol de la menta tiene un efecto refrescante que puede ayudar a aliviar la sensación de calor durante la fiebre.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Utilizada desde la antigüedad por sus propiedades digestivas y refrescantes, la menta también era un remedio común para la fiebre.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingJengibre">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJengibre" aria-expanded="false" aria-controls="collapseJengibre">
-                        <strong>7. Jengibre (Zingiber officinale)</strong>
-                    </button>
-                </h2>
-                <div id="collapseJengibre" class="accordion-collapse collapse" aria-labelledby="headingJengibre" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión de jengibre caliente promueve la sudoración y ayuda a calentar el cuerpo desde adentro, lo que puede ser útil para "romper" la fiebre.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Es un diaforético que estimula la circulación y ayuda al cuerpo a liberar calor a través del sudor.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Un remedio fundamental en la medicina tradicional asiática para tratar resfriados, gripes y fiebres.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMelisa">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMelisa" aria-expanded="false" aria-controls="collapseMelisa">
-                        <strong>8. Melisa (Melissa officinalis)</strong>
-                    </button>
-                </h2>
-                <div id="collapseMelisa" class="accordion-collapse collapse" aria-labelledby="headingMelisa" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión de melisa ayuda a reducir la fiebre al inducir la sudoración. También calma la inquietud que a menudo acompaña a la fiebre.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Combina propiedades diaforéticas con un efecto calmante sobre el sistema nervioso.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Conocida como "bálsamo de limón", se ha utilizado durante siglos en Europa para calmar los nervios y aliviar los síntomas del resfriado.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingVerbena">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVerbena" aria-expanded="false" aria-controls="collapseVerbena">
-                        <strong>9. Verbena (Verbena officinalis)</strong>
-                    </button>
-                </h2>
-                <div id="collapseVerbena" class="accordion-collapse collapse" aria-labelledby="headingVerbena" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Se toma en infusión para ayudar a reducir la fiebre y aliviar los dolores corporales asociados.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Tiene propiedades diaforéticas y antiinflamatorias que la hacen útil en el tratamiento de la fiebre.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Una planta sagrada para los druidas, la verbena se ha utilizado en la medicina popular europea para tratar una amplia gama de dolencias, incluyendo la fiebre.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingUlmaria">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUlmaria" aria-expanded="false" aria-controls="collapseUlmaria">
-                        <strong>10. Ulmaria (Filipendula ulmaria)</strong>
-                    </button>
-                </h2>
-                <div id="collapseUlmaria" class="accordion-collapse collapse" aria-labelledby="headingUlmaria" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Una infusión de sus flores se utiliza para reducir la fiebre y aliviar los dolores y molestias.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Al igual que el sauce blanco, contiene salicilatos, que le confieren propiedades antiinflamatorias, analgésicas y antipiréticas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Conocida como la "aspirina vegetal", la ulmaria fue una de las tres hierbas más sagradas para los druidas. Su uso para el dolor y la fiebre es muy antiguo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingGenciana">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenciana" aria-expanded="false" aria-controls="collapseGenciana">
-                        <strong>11. Genciana (Gentiana lutea)</strong>
-                    </button>
-                </h2>
-                <div id="collapseGenciana" class="accordion-collapse collapse" aria-labelledby="headingGenciana" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Se toma en pequeñas cantidades, generalmente como tintura, para ayudar a reducir la fiebre y estimular el sistema inmunológico.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Es una de las plantas más amargas, lo que estimula la digestión y la respuesta inmunológica. Tiene propiedades antipiréticas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Utilizada en la medicina tradicional europea desde la antigüedad para tratar una variedad de dolencias, incluyendo la fiebre y los problemas digestivos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingCayena">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCayena" aria-expanded="false" aria-controls="collapseCayena">
-                        <strong>12. Cayena (Capsicum annuum)</strong>
-                    </button>
-                </h2>
-                <div id="collapseCayena" class="accordion-collapse collapse" aria-labelledby="headingCayena" data-bs-parent="#accordionPlantasFiebre">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Añadir una pequeña cantidad de cayena a una infusión caliente puede ayudar a inducir la sudoración y a mejorar la circulación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>La capsaicina de la cayena estimula la circulación y promueve la sudoración, ayudando al cuerpo a enfriarse.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Utilizada por los nativos americanos como estimulante y para mejorar la circulación, la cayena también era un remedio para la fiebre.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
         </div>
-        <div class="d-flex justify-content-between mt-5">
-            <a href="ansiedad.html" class="btn btn-outline-secondary">&laquo; Anterior</a>
-            <a href="gripe.html" class="btn btn-outline-primary">Siguiente &raquo;</a>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEupatorio">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEupatorio"
+              aria-expanded="false"
+              aria-controls="collapseEupatorio"
+            >
+              <strong>4. Eupatorio (Eupatorium perfoliatum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseEupatorio"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEupatorio"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se toma en infusión para aliviar los síntomas de la gripe y
+                    el resfriado, incluyendo la fiebre y los dolores corporales.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    También conocida como "huesos rotos", esta planta es un
+                    potente diaforético y estimulante del sistema inmunológico.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Los nativos americanos la utilizaban ampliamente para tratar
+                    fiebres, especialmente la "fiebre de los huesos rotos" o
+                    dengue.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
-            <a href="../lista_sintomas.html" class="btn btn-success">Volver a síntomas</a>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTila">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTila"
+              aria-expanded="false"
+              aria-controls="collapseTila"
+            >
+              <strong>5. Tila (Tilia)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTila"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTila"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de flores de tila ayuda a inducir el sueño y la
+                    sudoración, siendo útil en casos de fiebre por resfriado.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Sus propiedades diaforéticas y relajantes ayudan al cuerpo a
+                    combatir la fiebre mientras promueven el descanso necesario.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Un remedio popular en Europa durante siglos para calmar los
+                    nervios y aliviar los síntomas del resfriado y la gripe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMenta">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMenta"
+              aria-expanded="false"
+              aria-controls="collapseMenta"
+            >
+              <strong>6. Menta (Mentha piperita)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseMenta"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingMenta"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de menta caliente puede inducir la sudoración,
+                    mientras que una infusión fría puede ayudar a refrescar el
+                    cuerpo.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El mentol de la menta tiene un efecto refrescante que puede
+                    ayudar a aliviar la sensación de calor durante la fiebre.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Utilizada desde la antigüedad por sus propiedades digestivas
+                    y refrescantes, la menta también era un remedio común para
+                    la fiebre.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJengibre">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseJengibre"
+              aria-expanded="false"
+              aria-controls="collapseJengibre"
+            >
+              <strong>7. Jengibre (Zingiber officinale)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseJengibre"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingJengibre"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de jengibre caliente promueve la sudoración y
+                    ayuda a calentar el cuerpo desde adentro, lo que puede ser
+                    útil para "romper" la fiebre.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Es un diaforético que estimula la circulación y ayuda al
+                    cuerpo a liberar calor a través del sudor.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Un remedio fundamental en la medicina tradicional asiática
+                    para tratar resfriados, gripes y fiebres.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMelisa">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMelisa"
+              aria-expanded="false"
+              aria-controls="collapseMelisa"
+            >
+              <strong>8. Melisa (Melissa officinalis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseMelisa"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingMelisa"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de melisa ayuda a reducir la fiebre al inducir
+                    la sudoración. También calma la inquietud que a menudo
+                    acompaña a la fiebre.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Combina propiedades diaforéticas con un efecto calmante
+                    sobre el sistema nervioso.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocida como "bálsamo de limón", se ha utilizado durante
+                    siglos en Europa para calmar los nervios y aliviar los
+                    síntomas del resfriado.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVerbena">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseVerbena"
+              aria-expanded="false"
+              aria-controls="collapseVerbena"
+            >
+              <strong>9. Verbena (Verbena officinalis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseVerbena"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingVerbena"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se toma en infusión para ayudar a reducir la fiebre y
+                    aliviar los dolores corporales asociados.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Tiene propiedades diaforéticas y antiinflamatorias que la
+                    hacen útil en el tratamiento de la fiebre.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Una planta sagrada para los druidas, la verbena se ha
+                    utilizado en la medicina popular europea para tratar una
+                    amplia gama de dolencias, incluyendo la fiebre.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingUlmaria">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseUlmaria"
+              aria-expanded="false"
+              aria-controls="collapseUlmaria"
+            >
+              <strong>10. Ulmaria (Filipendula ulmaria)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseUlmaria"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingUlmaria"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de sus flores se utiliza para reducir la fiebre
+                    y aliviar los dolores y molestias.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Al igual que el sauce blanco, contiene salicilatos, que le
+                    confieren propiedades antiinflamatorias, analgésicas y
+                    antipiréticas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocida como la "aspirina vegetal", la ulmaria fue una de
+                    las tres hierbas más sagradas para los druidas. Su uso para
+                    el dolor y la fiebre es muy antiguo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGenciana">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseGenciana"
+              aria-expanded="false"
+              aria-controls="collapseGenciana"
+            >
+              <strong>11. Genciana (Gentiana lutea)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseGenciana"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingGenciana"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se toma en pequeñas cantidades, generalmente como tintura,
+                    para ayudar a reducir la fiebre y estimular el sistema
+                    inmunológico.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Es una de las plantas más amargas, lo que estimula la
+                    digestión y la respuesta inmunológica. Tiene propiedades
+                    antipiréticas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Utilizada en la medicina tradicional europea desde la
+                    antigüedad para tratar una variedad de dolencias, incluyendo
+                    la fiebre y los problemas digestivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCayena">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCayena"
+              aria-expanded="false"
+              aria-controls="collapseCayena"
+            >
+              <strong>12. Cayena (Capsicum annuum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseCayena"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingCayena"
+            data-bs-parent="#accordionPlantasFiebre"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Añadir una pequeña cantidad de cayena a una infusión
+                    caliente puede ayudar a inducir la sudoración y a mejorar la
+                    circulación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La capsaicina de la cayena estimula la circulación y
+                    promueve la sudoración, ayudando al cuerpo a enfriarse.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Utilizada por los nativos americanos como estimulante y para
+                    mejorar la circulación, la cayena también era un remedio
+                    para la fiebre.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5">
+        <a href="ansiedad.html" class="btn btn-outline-secondary"
+          >&laquo; Anterior</a
+        >
+        <a href="gripe.html" class="btn btn-outline-primary"
+          >Siguiente &raquo;</a
+        >
+      </div>
+      <div class="text-center mt-5">
+        <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
+        <a href="../lista_sintomas.html" class="btn btn-success"
+          >Volver a síntomas</a
+        >
+      </div>
     </main>
 
-
     <footer class="mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
-            </div>
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
+        <div>
+          <a
+            href="https://www.instagram.com/as_juan_ca/"
+            class="text-white mx-2"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/573222614519" class="text-white mx-2"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"
+            ><i class="bi bi-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

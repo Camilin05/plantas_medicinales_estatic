@@ -1,328 +1,751 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantas para Quemaduras - EcoFarma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
-                    </ul>
-                </div>
-            </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../lista_sintomas.html"
+                  >😕 Síntomas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../nosotros.html"
+                  >🙋‍♂️ Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="text-success fw-bold">Plantas para Quemaduras Leves</h1>
-            <p class="lead text-muted">Remedios naturales para aliviar, desinflamar y regenerar la piel.</p>
+      <div class="text-center mb-5">
+        <h1 class="text-success fw-bold">Plantas para Quemaduras Leves</h1>
+        <p class="lead text-muted">
+          Remedios naturales para aliviar, desinflamar y regenerar la piel.
+        </p>
+      </div>
+
+      <div class="card bg-warning-subtle border-warning shadow-sm mb-5">
+        <div class="card-header fw-bold">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones
+          Importantes
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="bi bi-check-circle-fill text-warning me-2"></i>Solo usar
+              en quemaduras leves o de primer grado.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-warning me-2"></i>Siempre
+              lavar la zona con abundante agua fría antes de aplicar cualquier
+              remedio.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-warning me-2"></i>No
+              aplicar en quemaduras con ampollas abiertas o heridas infectadas
+              sin supervisión médica.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-warning me-2"></i>Si el
+              dolor o enrojecimiento empeora, acude a un profesional de la
+              salud.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPlantas">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAloe">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseAloe"
+              aria-expanded="false"
+              aria-controls="collapseAloe"
+            >
+              <strong>1. Aloe Vera (Aloe barbadensis miller)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseAloe"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingAloe"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/alovera.png"
+                    class="img-fluid rounded shadow-sm mb-3"
+                    alt="Aloe Vera"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Corta una hoja fresca, extrae el gel transparente y aplícalo
+                    directamente sobre la quemadura limpia. Repite varias veces
+                    al día para calmar, hidratar y regenerar.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Conocida como la "planta de la inmortalidad" por los
+                    egipcios, su gel contiene propiedades cicatrizantes,
+                    antiinflamatorias y calmantes, siendo un remedio universal
+                    para afecciones cutáneas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Usada desde hace más de 6,000 años por civilizaciones como
+                    la egipcia, griega y romana. Cleopatra la usaba en su rutina
+                    de belleza y Cristóbal Colón la llevaba en sus barcos para
+                    curar heridas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card bg-warning-subtle border-warning shadow-sm mb-5">
-            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones Importantes</div>
-            <div class="card-body">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Solo usar en quemaduras leves o de primer grado.</li>
-                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Siempre lavar la zona con abundante agua fría antes de aplicar cualquier remedio.</li>
-                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>No aplicar en quemaduras con ampollas abiertas o heridas infectadas sin supervisión médica.</li>
-                    <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Si el dolor o enrojecimiento empeora, acude a un profesional de la salud.</li>
-                </ul>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCalendula">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCalendula"
+              aria-expanded="false"
+              aria-controls="collapseCalendula"
+            >
+              <strong>2. Caléndula (Calendula officinalis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseCalendula"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingCalendula"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/calendula.jpg"
+                    class="img-fluid rounded shadow-sm mb-3"
+                    alt="Caléndula"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar en forma de pomadas, cremas o compresas frías
+                    (usando una infusión de sus pétalos) para reducir la
+                    inflamación y prevenir infecciones.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Planta con flores de color amarillo o naranja intenso. Sus
+                    flavonoides y aceites esenciales le otorgan un potente
+                    efecto antiinflamatorio, antiséptico y cicatrizante, ideal
+                    para pieles sensibles.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Cultivada en Europa desde la Antigüedad, especialmente en
+                    jardines monásticos de la Edad Media. Se usaba tanto en la
+                    cocina como en la medicina para tratar heridas y problemas
+                    de piel.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="accordion" id="accordionPlantas">
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAloe">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAloe" aria-expanded="false" aria-controls="collapseAloe">
-                        <strong>1. Aloe Vera (Aloe barbadensis miller)</strong>
-                    </button>
-                </h2>
-                <div id="collapseAloe" class="accordion-collapse collapse" aria-labelledby="headingAloe" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center">
-                                <img src="../img/alovera.png" class="img-fluid rounded shadow-sm mb-3" alt="Aloe Vera">
-                            </div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Corta una hoja fresca, extrae el gel transparente y aplícalo directamente sobre la quemadura limpia. Repite varias veces al día para calmar, hidratar y regenerar.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Conocida como la "planta de la inmortalidad" por los egipcios, su gel contiene propiedades cicatrizantes, antiinflamatorias y calmantes, siendo un remedio universal para afecciones cutáneas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Usada desde hace más de 6,000 años por civilizaciones como la egipcia, griega y romana. Cleopatra la usaba en su rutina de belleza y Cristóbal Colón la llevaba en sus barcos para curar heridas.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLlantén">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseLlantén"
+              aria-expanded="false"
+              aria-controls="collapseLlantén"
+            >
+              <strong>3. Llantén (Plantago major)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseLlantén"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingLlantén"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Triturar hojas frescas para hacer una cataplasma y aplicarla
+                    sobre la quemadura. Ayuda a reducir el dolor, la inflamación
+                    y a prevenir infecciones.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Contiene alantoína, un compuesto que promueve la
+                    regeneración celular, y taninos con propiedades astringentes
+                    y antiinflamatorias.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocido como "el vendaje del caminante", el llantén ha sido
+                    utilizado por diversas culturas durante siglos para tratar
+                    heridas, picaduras de insectos y quemaduras.
+                  </p>
                 </div>
+              </div>
             </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingCalendula">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalendula" aria-expanded="false" aria-controls="collapseCalendula">
-                        <strong>2. Caléndula (Calendula officinalis)</strong>
-                    </button>
-                </h2>
-                <div id="collapseCalendula" class="accordion-collapse collapse" aria-labelledby="headingCalendula" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center">
-                                <img src="../img/calendula.jpg" class="img-fluid rounded shadow-sm mb-3" alt="Caléndula">
-                            </div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar en forma de pomadas, cremas o compresas frías (usando una infusión de sus pétalos) para reducir la inflamación y prevenir infecciones.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Planta con flores de color amarillo o naranja intenso. Sus flavonoides y aceites esenciales le otorgan un potente efecto antiinflamatorio, antiséptico y cicatrizante, ideal para pieles sensibles.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Cultivada en Europa desde la Antigüedad, especialmente en jardines monásticos de la Edad Media. Se usaba tanto en la cocina como en la medicina para tratar heridas y problemas de piel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLlantén">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLlantén" aria-expanded="false" aria-controls="collapseLlantén">
-                        <strong>3. Llantén (Plantago major)</strong>
-                    </button>
-                </h2>
-                <div id="collapseLlantén" class="accordion-collapse collapse" aria-labelledby="headingLlantén" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Triturar hojas frescas para hacer una cataplasma y aplicarla sobre la quemadura. Ayuda a reducir el dolor, la inflamación y a prevenir infecciones.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Contiene alantoína, un compuesto que promueve la regeneración celular, y taninos con propiedades astringentes y antiinflamatorias.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Conocido como "el vendaje del caminante", el llantén ha sido utilizado por diversas culturas durante siglos para tratar heridas, picaduras de insectos y quemaduras.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingConsuelda">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConsuelda" aria-expanded="false" aria-controls="collapseConsuelda">
-                        <strong>4. Consuelda (Symphytum officinale)</strong>
-                    </button>
-                </h2>
-                <div id="collapseConsuelda" class="accordion-collapse collapse" aria-labelledby="headingConsuelda" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Utilizar una cataplasma de raíz o hojas de consuelda sobre la quemadura para acelerar la curación. No usar en heridas abiertas o profundas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Rica en alantoína y mucílagos, la consuelda es conocida por su capacidad para acelerar la regeneración de tejidos y reducir la inflamación.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Su nombre, "consuelda", proviene de su uso tradicional para "soldar" huesos rotos y curar heridas. Ha sido una planta medicinal importante en Europa durante siglos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingHipérico">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHipérico" aria-expanded="false" aria-controls="collapseHipérico">
-                        <strong>5. Hipérico (Hypericum perforatum)</strong>
-                    </button>
-                </h2>
-                <div id="collapseHipérico" class="accordion-collapse collapse" aria-labelledby="headingHipérico" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>El aceite de hipérico se aplica tópicamente sobre quemaduras solares y leves para aliviar el dolor, reducir la inflamación y promover la curación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>También conocida como hierba de San Juan, contiene hipericina e hiperforina, compuestos con propiedades antiinflamatorias, analgésicas y cicatrizantes.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Utilizada desde la antigua Grecia, la hierba de San Juan era un remedio popular para heridas, quemaduras y trastornos nerviosos. Se creía que tenía el poder de alejar a los malos espíritus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingManzanilla">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseManzanilla" aria-expanded="false" aria-controls="collapseManzanilla">
-                        <strong>6. Manzanilla (Matricaria chamomilla)</strong>
-                    </button>
-                </h2>
-                <div id="collapseManzanilla" class="accordion-collapse collapse" aria-labelledby="headingManzanilla" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar compresas frías de infusión de manzanilla sobre la quemadura para calmar la piel, reducir la inflamación y prevenir infecciones.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>Contiene compuestos con propiedades antiinflamatorias, antisépticas y calmantes, como el alfa-bisabolol y la apigenina.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>La manzanilla ha sido utilizada por diversas culturas durante miles de años para tratar una amplia gama de dolencias, incluidas las afecciones de la piel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLavanda">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLavanda" aria-expanded="false" aria-controls="collapseLavanda">
-                        <strong>7. Lavanda (Lavandula angustifolia)</strong>
-                    </button>
-                </h2>
-                <div id="collapseLavanda" class="accordion-collapse collapse" aria-labelledby="headingLavanda" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar unas gotas de aceite esencial de lavanda diluido en un aceite portador (como el de coco o almendras) sobre la quemadura para aliviar el dolor y acelerar la curación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>El aceite esencial de lavanda tiene propiedades analgésicas, antiinflamatorias y antisépticas que lo hacen muy eficaz para el tratamiento de quemaduras leves.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>El químico francés René-Maurice Gattefossé descubrió accidentalmente las propiedades curativas de la lavanda para las quemaduras a principios del siglo XX, lo que dio origen a la aromaterapia moderna.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMiel">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMiel" aria-expanded="false" aria-controls="collapseMiel">
-                        <strong>8. Miel (producto de las abejas)</strong>
-                    </button>
-                </h2>
-                <div id="collapseMiel" class="accordion-collapse collapse" aria-labelledby="headingMiel" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar una fina capa de miel cruda sobre la quemadura y cubrir con un vendaje. La miel ayuda a mantener la herida húmeda, a prevenir infecciones y a acelerar la curación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>La miel tiene propiedades antibacterianas, antiinflamatorias y cicatrizantes naturales. Crea una barrera protectora sobre la piel y promueve la regeneración de los tejidos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>La miel se ha utilizado para tratar heridas y quemaduras desde la antigüedad. Los antiguos egipcios, griegos y romanos conocían sus propiedades curativas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAvena">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAvena" aria-expanded="false" aria-controls="collapseAvena">
-                        <strong>9. Avena (Avena sativa)</strong>
-                    </button>
-                </h2>
-                <div id="collapseAvena" class="accordion-collapse collapse" aria-labelledby="headingAvena" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Tomar un baño de avena coloidal o aplicar una pasta de avena y agua sobre la quemadura para aliviar el picor, la irritación y la inflamación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>La avena contiene compuestos llamados avenantramidas, que tienen potentes propiedades antiinflamatorias y antihistamínicas. También forma una barrera protectora sobre la piel.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>Los baños de avena han sido un remedio popular durante mucho tiempo para tratar afecciones de la piel como el eccema, la psoriasis y las quemaduras solares.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTéNegro">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTéNegro" aria-expanded="false" aria-controls="collapseTéNegro">
-                        <strong>10. Té Negro (Camellia sinensis)</strong>
-                    </button>
-                </h2>
-                <div id="collapseTéNegro" class="accordion-collapse collapse" aria-labelledby="headingTéNegro" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar bolsitas de té negro húmedas y frías o compresas empapadas en té negro sobre la quemadura para aliviar el dolor y reducir la inflamación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>El té negro es rico en taninos, que tienen propiedades astringentes y antiinflamatorias. Ayudan a contraer los tejidos, a reducir la inflamación y a aliviar el dolor.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>El té se ha consumido como bebida durante miles de años, pero su uso tópico para tratar afecciones de la piel también es una práctica tradicional en muchas culturas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingCentella">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentella" aria-expanded="false" aria-controls="collapseCentella">
-                        <strong>11. Centella Asiática (Centella asiatica)</strong>
-                    </button>
-                </h2>
-                <div id="collapseCentella" class="accordion-collapse collapse" aria-labelledby="headingCentella" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5>
-                                <p>Aplicar cremas o ungüentos que contengan extracto de centella asiática para promover la cicatrización, reducir la inflamación y mejorar la producción de colágeno.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5>
-                                <p>También conocida como "gotu kola", esta planta contiene triterpenoides, compuestos que han demostrado acelerar la curación de heridas y quemaduras.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5>
-                                <p>La centella asiática ha sido utilizada en la medicina tradicional china y ayurvédica durante siglos para tratar afecciones de la piel, mejorar la memoria y promover la longevidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mt-5">
-            <span class="btn btn-outline-secondary disabled">&laquo; Anterior</span>
-            <a href="digestion.html" class="btn btn-outline-primary">Siguiente &raquo;</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingConsuelda">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseConsuelda"
+              aria-expanded="false"
+              aria-controls="collapseConsuelda"
+            >
+              <strong>4. Consuelda (Symphytum officinale)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseConsuelda"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingConsuelda"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Utilizar una cataplasma de raíz o hojas de consuelda sobre
+                    la quemadura para acelerar la curación. No usar en heridas
+                    abiertas o profundas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Rica en alantoína y mucílagos, la consuelda es conocida por
+                    su capacidad para acelerar la regeneración de tejidos y
+                    reducir la inflamación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Su nombre, "consuelda", proviene de su uso tradicional para
+                    "soldar" huesos rotos y curar heridas. Ha sido una planta
+                    medicinal importante en Europa durante siglos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
-            <a href="../lista_sintomas.html" class="btn btn-success">Volver a síntomas</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingHipérico">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseHipérico"
+              aria-expanded="false"
+              aria-controls="collapseHipérico"
+            >
+              <strong>5. Hipérico (Hypericum perforatum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseHipérico"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingHipérico"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    El aceite de hipérico se aplica tópicamente sobre quemaduras
+                    solares y leves para aliviar el dolor, reducir la
+                    inflamación y promover la curación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    También conocida como hierba de San Juan, contiene
+                    hipericina e hiperforina, compuestos con propiedades
+                    antiinflamatorias, analgésicas y cicatrizantes.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Utilizada desde la antigua Grecia, la hierba de San Juan era
+                    un remedio popular para heridas, quemaduras y trastornos
+                    nerviosos. Se creía que tenía el poder de alejar a los malos
+                    espíritus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingManzanilla">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseManzanilla"
+              aria-expanded="false"
+              aria-controls="collapseManzanilla"
+            >
+              <strong>6. Manzanilla (Matricaria chamomilla)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseManzanilla"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingManzanilla"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar compresas frías de infusión de manzanilla sobre la
+                    quemadura para calmar la piel, reducir la inflamación y
+                    prevenir infecciones.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Contiene compuestos con propiedades antiinflamatorias,
+                    antisépticas y calmantes, como el alfa-bisabolol y la
+                    apigenina.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La manzanilla ha sido utilizada por diversas culturas
+                    durante miles de años para tratar una amplia gama de
+                    dolencias, incluidas las afecciones de la piel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLavanda">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseLavanda"
+              aria-expanded="false"
+              aria-controls="collapseLavanda"
+            >
+              <strong>7. Lavanda (Lavandula angustifolia)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseLavanda"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingLavanda"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar unas gotas de aceite esencial de lavanda diluido en
+                    un aceite portador (como el de coco o almendras) sobre la
+                    quemadura para aliviar el dolor y acelerar la curación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El aceite esencial de lavanda tiene propiedades analgésicas,
+                    antiinflamatorias y antisépticas que lo hacen muy eficaz
+                    para el tratamiento de quemaduras leves.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El químico francés René-Maurice Gattefossé descubrió
+                    accidentalmente las propiedades curativas de la lavanda para
+                    las quemaduras a principios del siglo XX, lo que dio origen
+                    a la aromaterapia moderna.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMiel">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseMiel"
+              aria-expanded="false"
+              aria-controls="collapseMiel"
+            >
+              <strong>8. Miel (producto de las abejas)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseMiel"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingMiel"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar una fina capa de miel cruda sobre la quemadura y
+                    cubrir con un vendaje. La miel ayuda a mantener la herida
+                    húmeda, a prevenir infecciones y a acelerar la curación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La miel tiene propiedades antibacterianas, antiinflamatorias
+                    y cicatrizantes naturales. Crea una barrera protectora sobre
+                    la piel y promueve la regeneración de los tejidos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La miel se ha utilizado para tratar heridas y quemaduras
+                    desde la antigüedad. Los antiguos egipcios, griegos y
+                    romanos conocían sus propiedades curativas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAvena">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseAvena"
+              aria-expanded="false"
+              aria-controls="collapseAvena"
+            >
+              <strong>9. Avena (Avena sativa)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseAvena"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingAvena"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Tomar un baño de avena coloidal o aplicar una pasta de avena
+                    y agua sobre la quemadura para aliviar el picor, la
+                    irritación y la inflamación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La avena contiene compuestos llamados avenantramidas, que
+                    tienen potentes propiedades antiinflamatorias y
+                    antihistamínicas. También forma una barrera protectora sobre
+                    la piel.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Los baños de avena han sido un remedio popular durante mucho
+                    tiempo para tratar afecciones de la piel como el eccema, la
+                    psoriasis y las quemaduras solares.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTéNegro">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTéNegro"
+              aria-expanded="false"
+              aria-controls="collapseTéNegro"
+            >
+              <strong>10. Té Negro (Camellia sinensis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTéNegro"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTéNegro"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar bolsitas de té negro húmedas y frías o compresas
+                    empapadas en té negro sobre la quemadura para aliviar el
+                    dolor y reducir la inflamación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El té negro es rico en taninos, que tienen propiedades
+                    astringentes y antiinflamatorias. Ayudan a contraer los
+                    tejidos, a reducir la inflamación y a aliviar el dolor.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El té se ha consumido como bebida durante miles de años,
+                    pero su uso tópico para tratar afecciones de la piel también
+                    es una práctica tradicional en muchas culturas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCentella">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseCentella"
+              aria-expanded="false"
+              aria-controls="collapseCentella"
+            >
+              <strong>11. Centella Asiática (Centella asiatica)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseCentella"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingCentella"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Aplicar cremas o ungüentos que contengan extracto de
+                    centella asiática para promover la cicatrización, reducir la
+                    inflamación y mejorar la producción de colágeno.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    También conocida como "gotu kola", esta planta contiene
+                    triterpenoides, compuestos que han demostrado acelerar la
+                    curación de heridas y quemaduras.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La centella asiática ha sido utilizada en la medicina
+                    tradicional china y ayurvédica durante siglos para tratar
+                    afecciones de la piel, mejorar la memoria y promover la
+                    longevidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5">
+        <span class="btn btn-outline-secondary disabled">&laquo; Anterior</span>
+        <a href="digestion.html" class="btn btn-outline-primary"
+          >Siguiente &raquo;</a
+        >
+      </div>
+      <div class="text-center mt-5">
+        <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
+        <a href="../lista_sintomas.html" class="btn btn-success"
+          >Volver a síntomas</a
+        >
+      </div>
     </main>
 
-
     <footer class="mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
-            </div>
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
+        <div>
+          <a
+            href="https://www.instagram.com/as_juan_ca/"
+            class="text-white mx-2"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/573222614519" class="text-white mx-2"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"
+            ><i class="bi bi-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

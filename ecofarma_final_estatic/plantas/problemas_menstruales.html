@@ -1,287 +1,825 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plantas para Problemas Menstruales - EcoFarma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link" href="../inicio.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../lista_sintomas.html">😕 Síntomas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../nosotros.html">🙋‍♂️ Sobre nosotros</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="../inicio.html">🌿 EcoFarma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lista_plantas.html">🌱 Plantas</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../lista_sintomas.html"
+                  >😕 Síntomas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../nosotros.html"
+                  >🙋‍♂️ Sobre nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="text-success fw-bold">Plantas para Problemas Menstruales</h1>
-            <p class="lead text-muted">Aliados naturales para aliviar cólicos, regular el ciclo y reducir el malestar.</p>
-        </div>
+      <div class="text-center mb-5">
+        <h1 class="text-success fw-bold">Plantas para Problemas Menstruales</h1>
+        <p class="lead text-muted">
+          Aliados naturales para aliviar cólicos, regular el ciclo y reducir el
+          malestar.
+        </p>
+      </div>
 
-        <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
-            <div class="card-header fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones</div>
-            <div class="card-body">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Aplica calor local en el abdomen para ayudar a relajar los músculos del útero y aliviar los cólicos.</li>
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Practica ejercicio suave como caminar, nadar o yoga para liberar endorfinas, que actúan como analgésicos naturales.</li>
-                    <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Mantén una dieta saludable, baja en grasas saturadas y rica en frutas, vegetales y fibra. Evita la cafeína y las bebidas con gas.</li>
-                </ul>
-            </div>
+      <div class="card bg-danger-subtle border-danger shadow-sm mb-5">
+        <div class="card-header fw-bold">
+          <i class="bi bi-exclamation-triangle-fill me-2"></i>Recomendaciones
         </div>
+        <div class="card-body">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>Aplica
+              calor local en el abdomen para ayudar a relajar los músculos del
+              útero y aliviar los cólicos.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>Practica
+              ejercicio suave como caminar, nadar o yoga para liberar
+              endorfinas, que actúan como analgésicos naturales.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill text-danger me-2"></i>Mantén una
+              dieta saludable, baja en grasas saturadas y rica en frutas,
+              vegetales y fibra. Evita la cafeína y las bebidas con gas.
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="accordion" id="accordionPlantas">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading1">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                        <strong>1. Manzanilla (Matricaria chamomilla)</strong>
-                    </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"><img src="../img/manzanilla.jpg" class="img-fluid rounded shadow-sm" alt="Manzanilla"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La manzanilla es ampliamente utilizada para aliviar los cólicos menstruales debido a sus propiedades antiinflamatorias y antiespasmódicas. Una infusión de manzanilla puede ayudar a relajar los músculos del útero y reducir el dolor. También se emplea como un calmante suave para aliviar la irritabilidad y la ansiedad asociadas con el síndrome premenstrual. Además, es conocida por sus beneficios digestivos y para el cuidado de la piel.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La manzanilla, también conocida como camomila, es una planta herbácea de la familia de las margaritas (Asteraceae). Sus flores, con un centro amarillo y pétalos blancos, son las que se utilizan con fines medicinales. Su aroma es dulce y recuerda al de la manzana.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La manzanilla ha sido una de las plantas medicinales más populares a lo largo de la historia. Los antiguos egipcios, griegos y romanos la utilizaban para tratar diversas dolencias. En la Edad Media, se cultivaba en los jardines de los monasterios y era un remedio común para problemas digestivos, inflamaciones y para calmar los nervios. Su uso para aliviar los dolores menstruales también tiene una larga tradición en la medicina popular de diversas culturas.</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="accordion" id="accordionPlantas">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="false"
+              aria-controls="collapse1"
+            >
+              <strong>1. Manzanilla (Matricaria chamomilla)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse1"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading1"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/manzanilla.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt="Manzanilla"
+                  />
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                        <strong>2. Jengibre (Zingiber officinale)</strong>
-                    </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Una infusión de jengibre puede ayudar a aliviar los cólicos menstruales y a reducir la inflamación. También es útil para las náuseas que algunas mujeres experimentan durante la menstruación.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El jengibre tiene propiedades antiinflamatorias y antiespasmódicas que ayudan a relajar los músculos del útero y a reducir la producción de prostaglandinas, las sustancias que causan los cólicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El jengibre se ha utilizado en la medicina tradicional asiática durante miles de años para tratar una variedad de dolencias, incluyendo los dolores menstruales y los problemas digestivos.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La manzanilla es ampliamente utilizada para aliviar los
+                    cólicos menstruales debido a sus propiedades
+                    antiinflamatorias y antiespasmódicas. Una infusión de
+                    manzanilla puede ayudar a relajar los músculos del útero y
+                    reducir el dolor. También se emplea como un calmante suave
+                    para aliviar la irritabilidad y la ansiedad asociadas con el
+                    síndrome premenstrual. Además, es conocida por sus
+                    beneficios digestivos y para el cuidado de la piel.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La manzanilla, también conocida como camomila, es una planta
+                    herbácea de la familia de las margaritas (Asteraceae). Sus
+                    flores, con un centro amarillo y pétalos blancos, son las
+                    que se utilizan con fines medicinales. Su aroma es dulce y
+                    recuerda al de la manzana.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La manzanilla ha sido una de las plantas medicinales más
+                    populares a lo largo de la historia. Los antiguos egipcios,
+                    griegos y romanos la utilizaban para tratar diversas
+                    dolencias. En la Edad Media, se cultivaba en los jardines de
+                    los monasterios y era un remedio común para problemas
+                    digestivos, inflamaciones y para calmar los nervios. Su uso
+                    para aliviar los dolores menstruales también tiene una larga
+                    tradición en la medicina popular de diversas culturas.
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                        <strong>3. Canela (Cinnamomum)</strong>
-                    </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Una infusión de canela puede ayudar a aliviar los cólicos menstruales y a regular el flujo sanguíneo.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La canela tiene propiedades antiinflamatorias, antiespasmódicas y analgésicas que ayudan a reducir el dolor y los calambres.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La canela ha sido una especia muy valorada desde la antigüedad. En la medicina tradicional, se ha utilizado para tratar una variedad de dolencias, incluyendo los problemas menstruales.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        <strong>4. Hinojo (Foeniculum vulgare)</strong>
-                    </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Una infusión de semillas de hinojo puede ayudar a aliviar los cólicos menstruales y la hinchazón.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El hinojo tiene propiedades antiespasmódicas y antiinflamatorias que ayudan a relajar los músculos del útero y a reducir el dolor.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El hinojo se ha utilizado en la medicina tradicional desde la antigüedad para tratar problemas digestivos y menstruales. Se creía que también tenía propiedades mágicas y que podía proteger contra el mal.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                        <strong>5. Dong quai (Angelica sinensis)</strong>
-                    </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Se utiliza para regular el ciclo menstrual, aliviar los cólicos y reducir los síntomas del síndrome premenstrual (SPM). Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>Conocida como el "ginseng femenino", la raíz de dong quai contiene fitoestrógenos que ayudan a equilibrar las hormonas. También tiene propiedades antiespasmódicas y analgésicas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>El dong quai ha sido una de las hierbas más importantes de la medicina tradicional china para la salud de la mujer durante miles de años. Se utilizaba para tratar una amplia gama de problemas ginecológicos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading6">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                        <strong>6. Sauzgatillo (Vitex agnus-castus)</strong>
-                    </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Se utiliza para regular el ciclo menstrual, aliviar los síntomas del SPM y reducir el dolor de los senos. Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>El sauzgatillo actúa sobre la glándula pituitaria para equilibrar los niveles de estrógeno y progesterona. Ayuda a regular la producción de prolactina, una hormona que puede causar sensibilidad en los senos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>En la antigua Grecia, se creía que el sauzgatillo reducía el deseo sexual, de ahí su nombre en latín "agnus-castus" (cordero casto). Se ha utilizado durante siglos para tratar problemas menstruales.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading7">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                        <strong>7. Cimicífuga (Cimicifuga racemosa)</strong>
-                    </button>
-                </h2>
-                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Se utiliza para aliviar los cólicos menstruales y los síntomas de la menopausia. Se toma en forma de extracto o cápsulas.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La cimicífuga contiene compuestos con propiedades similares a los estrógenos, así como propiedades antiinflamatorias y antiespasmódicas. Ayuda a relajar el útero y a reducir el dolor.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>Utilizada por los nativos americanos para tratar una variedad de problemas de salud de la mujer, la cimicífuga se convirtió en un remedio popular en Estados Unidos en el siglo XIX para los dolores menstruales y los síntomas de la menopausia.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading8">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                        <strong>8. Caléndula (Calendula officinalis)</strong>
-                    </button>
-                </h2>
-                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Una infusión de flores de caléndula puede ayudar a regular el ciclo menstrual y a aliviar los cólicos.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La caléndula tiene propiedades emenagogas, que ayudan a estimular el flujo sanguíneo en la zona pélvica y el útero. También tiene propiedades antiinflamatorias y antiespasmódicas.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La caléndula se ha utilizado en la medicina tradicional durante siglos para tratar una variedad de dolencias, incluyendo los problemas menstruales y las afecciones de la piel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading9">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                        <strong>9. Artemisa (Artemisia vulgaris)</strong>
-                    </button>
-                </h2>
-                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Se utiliza para regular los ciclos menstruales irregulares y para aliviar los cólicos. Se toma en forma de infusión o tintura. No se debe utilizar durante el embarazo.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La artemisa es un emenagogo que ayuda a estimular el flujo menstrual. También tiene propiedades antiespasmódicas que ayudan a aliviar los cólicos.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>Conocida como la "hierba de la mujer", la artemisa ha sido utilizada durante siglos en la medicina tradicional europea y asiática para tratar problemas menstruales y digestivos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading10">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        <strong>10. Milenrama (Achillea millefolium)</strong>
-                    </button>
-                </h2>
-                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>Se utiliza para aliviar los cólicos menstruales y para reducir el sangrado abundante. Se toma en forma de infusión.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>La milenrama tiene propiedades antiespasmódicas que ayudan a relajar los músculos del útero. También contiene taninos, que son astringentes y ayudan a reducir el sangrado.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La milenrama ha sido utilizada durante miles de años para tratar una variedad de dolencias, desde heridas hasta problemas menstruales. Se dice que Aquiles la utilizó para curar las heridas de sus soldados.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading11">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                        <strong>11. Frambuesa (Rubus idaeus)</strong>
-                    </button>
-                </h2>
-                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionPlantas">
-                    <div class="accordion-body">
-                        <div class="row g-4">
-                            <div class="col-md-4 text-center"></div>
-                            <div class="col-md-8">
-                                <h5><i class="bi bi-droplet-half text-success me-2"></i>Usos</h5><p>La infusión de hojas de frambuesa es un tónico uterino que ayuda a tonificar los músculos del útero, a aliviar los cólicos y a regular el flujo menstrual.</p>
-                                <h5><i class="bi bi-book-half text-success me-2"></i>Definición</h5><p>Contiene fragarina, un alcaloide que ayuda a tonificar y a relajar los músculos del útero. También es rica en vitaminas y minerales.</p>
-                                <h5><i class="bi bi-clock-history text-success me-2"></i>Historia</h5><p>La hoja de frambuesa ha sido utilizada durante siglos por las mujeres para apoyar la salud reproductiva, especialmente durante el embarazo y el parto.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mt-5">
-            <a href="estres.html" class="btn btn-outline-secondary">&laquo; Anterior</a>
-            <span class="btn btn-outline-primary disabled">Siguiente &raquo;</span>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse2"
+              aria-expanded="false"
+              aria-controls="collapse2"
+            >
+              <strong>2. Jengibre (Zingiber officinale)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse2"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading2"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de jengibre puede ayudar a aliviar los cólicos
+                    menstruales y a reducir la inflamación. También es útil para
+                    las náuseas que algunas mujeres experimentan durante la
+                    menstruación.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El jengibre tiene propiedades antiinflamatorias y
+                    antiespasmódicas que ayudan a relajar los músculos del útero
+                    y a reducir la producción de prostaglandinas, las sustancias
+                    que causan los cólicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El jengibre se ha utilizado en la medicina tradicional
+                    asiática durante miles de años para tratar una variedad de
+                    dolencias, incluyendo los dolores menstruales y los
+                    problemas digestivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mt-5">
-            <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
-            <a href="../lista_sintomas.html" class="btn btn-success">Volver a síntomas</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse3"
+              aria-expanded="false"
+              aria-controls="collapse3"
+            >
+              <strong>3. Canela (Cinnamomum)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse3"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading3"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de canela puede ayudar a aliviar los cólicos
+                    menstruales y a regular el flujo sanguíneo.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La canela tiene propiedades antiinflamatorias,
+                    antiespasmódicas y analgésicas que ayudan a reducir el dolor
+                    y los calambres.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La canela ha sido una especia muy valorada desde la
+                    antigüedad. En la medicina tradicional, se ha utilizado para
+                    tratar una variedad de dolencias, incluyendo los problemas
+                    menstruales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4"
+            >
+              <strong>4. Hinojo (Foeniculum vulgare)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse4"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading4"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de semillas de hinojo puede ayudar a aliviar
+                    los cólicos menstruales y la hinchazón.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El hinojo tiene propiedades antiespasmódicas y
+                    antiinflamatorias que ayudan a relajar los músculos del
+                    útero y a reducir el dolor.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El hinojo se ha utilizado en la medicina tradicional desde
+                    la antigüedad para tratar problemas digestivos y
+                    menstruales. Se creía que también tenía propiedades mágicas
+                    y que podía proteger contra el mal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse5"
+              aria-expanded="false"
+              aria-controls="collapse5"
+            >
+              <strong>5. Dong quai (Angelica sinensis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse5"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading5"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se utiliza para regular el ciclo menstrual, aliviar los
+                    cólicos y reducir los síntomas del síndrome premenstrual
+                    (SPM). Se toma en forma de extracto o cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Conocida como el "ginseng femenino", la raíz de dong quai
+                    contiene fitoestrógenos que ayudan a equilibrar las
+                    hormonas. También tiene propiedades antiespasmódicas y
+                    analgésicas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    El dong quai ha sido una de las hierbas más importantes de
+                    la medicina tradicional china para la salud de la mujer
+                    durante miles de años. Se utilizaba para tratar una amplia
+                    gama de problemas ginecológicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse6"
+              aria-expanded="false"
+              aria-controls="collapse6"
+            >
+              <strong>6. Sauzgatillo (Vitex agnus-castus)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse6"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading6"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se utiliza para regular el ciclo menstrual, aliviar los
+                    síntomas del SPM y reducir el dolor de los senos. Se toma en
+                    forma de extracto o cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    El sauzgatillo actúa sobre la glándula pituitaria para
+                    equilibrar los niveles de estrógeno y progesterona. Ayuda a
+                    regular la producción de prolactina, una hormona que puede
+                    causar sensibilidad en los senos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    En la antigua Grecia, se creía que el sauzgatillo reducía el
+                    deseo sexual, de ahí su nombre en latín "agnus-castus"
+                    (cordero casto). Se ha utilizado durante siglos para tratar
+                    problemas menstruales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse7"
+              aria-expanded="false"
+              aria-controls="collapse7"
+            >
+              <strong>7. Cimicífuga (Cimicifuga racemosa)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse7"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading7"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se utiliza para aliviar los cólicos menstruales y los
+                    síntomas de la menopausia. Se toma en forma de extracto o
+                    cápsulas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La cimicífuga contiene compuestos con propiedades similares
+                    a los estrógenos, así como propiedades antiinflamatorias y
+                    antiespasmódicas. Ayuda a relajar el útero y a reducir el
+                    dolor.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Utilizada por los nativos americanos para tratar una
+                    variedad de problemas de salud de la mujer, la cimicífuga se
+                    convirtió en un remedio popular en Estados Unidos en el
+                    siglo XIX para los dolores menstruales y los síntomas de la
+                    menopausia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse8"
+              aria-expanded="false"
+              aria-controls="collapse8"
+            >
+              <strong>8. Caléndula (Calendula officinalis)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse8"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading8"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Una infusión de flores de caléndula puede ayudar a regular
+                    el ciclo menstrual y a aliviar los cólicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La caléndula tiene propiedades emenagogas, que ayudan a
+                    estimular el flujo sanguíneo en la zona pélvica y el útero.
+                    También tiene propiedades antiinflamatorias y
+                    antiespasmódicas.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La caléndula se ha utilizado en la medicina tradicional
+                    durante siglos para tratar una variedad de dolencias,
+                    incluyendo los problemas menstruales y las afecciones de la
+                    piel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse9"
+              aria-expanded="false"
+              aria-controls="collapse9"
+            >
+              <strong>9. Artemisa (Artemisia vulgaris)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse9"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading9"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se utiliza para regular los ciclos menstruales irregulares y
+                    para aliviar los cólicos. Se toma en forma de infusión o
+                    tintura. No se debe utilizar durante el embarazo.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La artemisa es un emenagogo que ayuda a estimular el flujo
+                    menstrual. También tiene propiedades antiespasmódicas que
+                    ayudan a aliviar los cólicos.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    Conocida como la "hierba de la mujer", la artemisa ha sido
+                    utilizada durante siglos en la medicina tradicional europea
+                    y asiática para tratar problemas menstruales y digestivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse10"
+              aria-expanded="false"
+              aria-controls="collapse10"
+            >
+              <strong>10. Milenrama (Achillea millefolium)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse10"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading10"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    Se utiliza para aliviar los cólicos menstruales y para
+                    reducir el sangrado abundante. Se toma en forma de infusión.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    La milenrama tiene propiedades antiespasmódicas que ayudan a
+                    relajar los músculos del útero. También contiene taninos,
+                    que son astringentes y ayudan a reducir el sangrado.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La milenrama ha sido utilizada durante miles de años para
+                    tratar una variedad de dolencias, desde heridas hasta
+                    problemas menstruales. Se dice que Aquiles la utilizó para
+                    curar las heridas de sus soldados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading11">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse11"
+              aria-expanded="false"
+              aria-controls="collapse11"
+            >
+              <strong>11. Frambuesa (Rubus idaeus)</strong>
+            </button>
+          </h2>
+          <div
+            id="collapse11"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading11"
+            data-bs-parent="#accordionPlantas"
+          >
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-4 text-center">
+                  <img
+                    src="../img/SINAME.jpg"
+                    class="img-fluid rounded shadow-sm"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-4 text-center"></div>
+                <div class="col-md-8">
+                  <h5>
+                    <i class="bi bi-droplet-half text-success me-2"></i>Usos
+                  </h5>
+                  <p>
+                    La infusión de hojas de frambuesa es un tónico uterino que
+                    ayuda a tonificar los músculos del útero, a aliviar los
+                    cólicos y a regular el flujo menstrual.
+                  </p>
+                  <h5>
+                    <i class="bi bi-book-half text-success me-2"></i>Definición
+                  </h5>
+                  <p>
+                    Contiene fragarina, un alcaloide que ayuda a tonificar y a
+                    relajar los músculos del útero. También es rica en vitaminas
+                    y minerales.
+                  </p>
+                  <h5>
+                    <i class="bi bi-clock-history text-success me-2"></i
+                    >Historia
+                  </h5>
+                  <p>
+                    La hoja de frambuesa ha sido utilizada durante siglos por
+                    las mujeres para apoyar la salud reproductiva, especialmente
+                    durante el embarazo y el parto.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5">
+        <a href="estres.html" class="btn btn-outline-secondary"
+          >&laquo; Anterior</a
+        >
+        <span class="btn btn-outline-primary disabled">Siguiente &raquo;</span>
+      </div>
+      <div class="text-center mt-5">
+        <a href="../inicio.html" class="btn btn-success">Volver al inicio</a>
+        <a href="../lista_sintomas.html" class="btn btn-success"
+          >Volver a síntomas</a
+        >
+      </div>
     </main>
 
     <footer class="mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
-            </div>
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
+        <div>
+          <a
+            href="https://www.instagram.com/as_juan_ca/"
+            class="text-white mx-2"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/573222614519" class="text-white mx-2"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"
+            ><i class="bi bi-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
