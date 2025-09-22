@@ -1,312 +1,1499 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo de Plantas - EcoFarma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/base.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
 
-<body class="d-flex flex-column min-vh-100"> 
-    
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="inicio.html">🌿 EcoFarma</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="inicio.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="lista_plantas.html">🌱 Plantas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="lista_sintomas.html">😕 Síntomas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">🙋‍♂️ Sobre nosotros</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="inicio.html">🌿 EcoFarma</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="lista_plantas.html"
+                  >🌱 Plantas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lista_sintomas.html">😕 Síntomas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">🙋‍♂️ Sobre nosotros</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="container py-5">
-        <div class="text-center">
-            <h1 class="text-success fw-bold">Catálogo de Plantas Medicinales</h1>
-            <p class="lead text-muted">Explora nuestra colección de plantas y sus propiedades terapéuticas.</p>
-        </div>
+      <div class="text-center">
+        <h1 class="text-success fw-bold">Catálogo de Plantas Medicinales</h1>
+        <p class="lead text-muted">
+          Explora nuestra colección de plantas y sus propiedades terapéuticas.
+        </p>
+      </div>
 
-        <hr class="my-5">
-        
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/manzanilla.jpg" class="card-img-top" alt="Manzanilla">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Manzanilla</h5>
-                        <p class="card-text">Calmante y digestiva, ideal para infusiones relajantes antes de dormir.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Utilizada desde el antiguo Egipto y Roma por sus propiedades medicinales y como ofrenda a los dioses.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/tomillo.jpg" class="card-img-top" alt="Tomillo">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Tomillo</h5>
-                        <p class="card-text">Antiséptico natural, muy usado para aliviar la tos y problemas respiratorios.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Los antiguos egipcios lo usaban para embalsamar y los griegos como incienso en sus templos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/menta.jpg" class="card-img-top" alt="Menta">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Menta</h5>
-                        <p class="card-text">Refrescante y excelente para aliviar dolores de cabeza y malestares estomacales.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Su nombre proviene de la mitología griega, donde la ninfa Mente fue transformada en esta planta aromática.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/alovera.png" class="card-img-top" alt="Aloe vera">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Aloe vera</h5>
-                        <p class="card-text">Excelente para el cuidado de la piel, quemaduras y cicatrización.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Conocida como la "planta de la inmortalidad" en el antiguo Egipto y usada en los rituales de belleza de Cleopatra.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/calendula.jpg" class="card-img-top" alt="Caléndula">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Caléndula</h5>
-                        <p class="card-text">Conocida por sus propiedades antiinflamatorias y calmantes para la piel.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Apreciada por romanos y griegos, la usaban tanto en la cocina y medicina como en ceremonias religiosas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/hinojo.jpg" class="card-img-top" alt="Hinojo">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Hinojo</h5>
-                        <p class="card-text">Utilizado para aliviar trastornos digestivos, cólicos y reducir los gases.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Los guerreros romanos lo consumían para mantenerse fuertes y saludables en batalla.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/valeriana.jpg" class="card-img-top" alt="Valeriana">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Valeriana</h5>
-                        <p class="card-text">Potente sedante natural, ideal para combatir el insomnio y la ansiedad.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Hipócrates, en la antigua Grecia, ya describía sus propiedades como un remedio para el insomnio.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/pasiflora.jpg" class="card-img-top" alt="Pasiflora">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Pasiflora</h5>
-                        <p class="card-text">Ayuda a calmar la ansiedad y el estrés, promoviendo un estado de relajación.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Utilizada tradicionalmente por los nativos americanos como un sedante suave y analgésico.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/sauce_blanco.jpg" class="card-img-top" alt="Sauce Blanco">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Sauce Blanco</h5>
-                        <p class="card-text">Fuente natural de salicina, utilizada como analgésico y antiinflamatorio.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Su corteza ha sido usada por milenios para tratar el dolor, inspirando la creación de la aspirina.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/sauco.jpg" class="card-img-top" alt="Saúco">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Saúco</h5>
-                        <p class="card-text">Eficaz para fortalecer el sistema inmune y aliviar síntomas de gripa.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Hipócrates lo llamaba "el botiquín del pueblo" por la multitud de dolencias que podía tratar.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/jengibre.jpg" class="card-img-top" alt="Jengibre">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Jengibre</h5>
-                        <p class="card-text">Combate las náuseas y posee potentes efectos antiinflamatorios y digestivos.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Ha sido un pilar en la medicina tradicional asiática durante más de 5000 años.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/equinacea.jpg" class="card-img-top" alt="Equinácea">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Equinácea</h5>
-                        <p class="card-text">Estimula el sistema inmunológico, ayudando a prevenir y combatir infecciones.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Era la planta medicinal más importante para los nativos de las llanuras de Norteamérica.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/lupulo.jpg" class="card-img-top" alt="Lúpulo">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Lúpulo</h5>
-                        <p class="card-text">Utilizado por su efecto calmante, para inducir el sueño y como tónico digestivo.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Aunque famoso por la cerveza, se ha usado desde la Edad Media para tratar el nerviosismo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/curcuma.jpg" class="card-img-top" alt="Cúrcuma">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Cúrcuma</h5>
-                        <p class="card-text">Poderoso antiinflamatorio natural, beneficioso para la salud articular.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Es un componente esencial en la medicina ayurvédica de la India desde hace 4000 años.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/harpagofito.jpg" class="card-img-top" alt="Harpagofito">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Harpagofito</h5>
-                        <p class="card-text">Especialmente indicado para aliviar el dolor en articulaciones y la artritis.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Originaria de África, se popularizó en Europa para tratar la artritis en el siglo XX.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/romero.jpg" class="card-img-top" alt="Romero">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Romero</h5>
-                        <p class="card-text">Estimulante que mejora la memoria, la concentración y la circulación sanguínea.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Símbolo de la memoria en la antigua Grecia, donde los estudiantes lo usaban en el cabello.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/melisa.jpg" class="card-img-top" alt="Melisa">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Melisa</h5>
-                        <p class="card-text">Conocida como toronjil, es ideal para calmar los nervios y facilitar el descanso.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> El médico persa Avicena la recomendaba en el siglo XI para "alegrar el corazón".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/gordolobo.jpg" class="card-img-top" alt="Gordolobo">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Gordolobo</h5>
-                        <p class="card-text">Beneficioso para el sistema respiratorio, alivia la tos y la congestión.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> El médico griego Dioscórides ya la recomendaba hace 2000 años para tratar enfermedades pulmonares.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/hierba_san_roberto.jpg" class="card-img-top" alt="Hierba de San Roberto">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Hierba de San Roberto</h5>
-                        <p class="card-text">Planta con propiedades astringentes y diuréticas, usada en remedios populares.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Su nombre se asocia a San Roberto de Molesmes, quien popularizó su uso en el siglo XI.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/pasionaria_azul.jpg" class="card-img-top" alt="Pasionaria Azul">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Pasionaria Azul</h5>
-                        <p class="card-text">Variedad de la pasiflora, con efectos relajantes para la ansiedad y el insomnio.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Los misioneros españoles la llamaron "Flor de la Pasión" por su semejanza con símbolos de la crucifixión.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/malva_silvestre.jpg" class="card-img-top" alt="Malva Silvestre">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Malva Silvestre</h5>
-                        <p class="card-text">Suaviza la garganta irritada y alivia afecciones de la piel por su mucílago.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Carlomagno ordenó su cultivo en los jardines imperiales por sus valoradas propiedades.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/arnica.jpg" class="card-img-top" alt="Árnica">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Árnica</h5>
-                        <p class="card-text">Ideal para uso tópico en golpes, moretones, inflamación y dolores musculares.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Utilizada en la medicina popular europea desde el siglo XVI para tratar caídas y contusiones.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/arbol_te.jpg" class="card-img-top" alt="Árbol de té">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Árbol de té</h5>
-                        <p class="card-text">Potente antiséptico y antifúngico, excelente para tratar afecciones de la piel.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Los aborígenes australianos han usado sus hojas machacadas como antiséptico durante milenios.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="img/ashwagandha.jpg" class="card-img-top" alt="Ashwagandha">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Ashwagandha</h5>
-                        <p class="card-text">Adaptógeno que ayuda al cuerpo a manejar el estrés y mejora la vitalidad.</p>
-                        <p class="card-text text-muted small mt-2"><strong>Historia:</strong> Es una de las hierbas más importantes de la medicina ayurvédica, usada por más de 3000 años.</p>
-                    </div>
-                </div>
-            </div>
+      <hr class="my-5" />
 
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/manzanilla.jpg"
+              class="card-img-top"
+              alt="Manzanilla"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Manzanilla</h5>
+              <p class="card-text">
+                Calmante y digestiva, ideal para infusiones relajantes antes de
+                dormir.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada desde el antiguo Egipto y
+                Roma por sus propiedades medicinales y como ofrenda a los
+                dioses.
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tomillo.jpg" class="card-img-top" alt="Tomillo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Tomillo</h5>
+              <p class="card-text">
+                Antiséptico natural, muy usado para aliviar la tos y problemas
+                respiratorios.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Los antiguos egipcios lo usaban para
+                embalsamar y los griegos como incienso en sus templos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/menta.jpg" class="card-img-top" alt="Menta" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Menta</h5>
+              <p class="card-text">
+                Refrescante y excelente para aliviar dolores de cabeza y
+                malestares estomacales.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su nombre proviene de la mitología
+                griega, donde la ninfa Mente fue transformada en esta planta
+                aromática.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/alovera.png" class="card-img-top" alt="Aloe vera" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Aloe vera</h5>
+              <p class="card-text">
+                Excelente para el cuidado de la piel, quemaduras y
+                cicatrización.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocida como la "planta de la
+                inmortalidad" en el antiguo Egipto y usada en los rituales de
+                belleza de Cleopatra.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/calendula.jpg" class="card-img-top" alt="Caléndula" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Caléndula</h5>
+              <p class="card-text">
+                Conocida por sus propiedades antiinflamatorias y calmantes para
+                la piel.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Apreciada por romanos y griegos, la
+                usaban tanto en la cocina y medicina como en ceremonias
+                religiosas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hinojo.jpg" class="card-img-top" alt="Hinojo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hinojo</h5>
+              <p class="card-text">
+                Utilizado para aliviar trastornos digestivos, cólicos y reducir
+                los gases.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Los guerreros romanos lo consumían
+                para mantenerse fuertes y saludables en batalla.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/valeriana.jpg" class="card-img-top" alt="Valeriana" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Valeriana</h5>
+              <p class="card-text">
+                Potente sedante natural, ideal para combatir el insomnio y la
+                ansiedad.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Hipócrates, en la antigua Grecia, ya
+                describía sus propiedades como un remedio para el insomnio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/pasiflora.jpg" class="card-img-top" alt="Pasiflora" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Pasiflora</h5>
+              <p class="card-text">
+                Ayuda a calmar la ansiedad y el estrés, promoviendo un estado de
+                relajación.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada tradicionalmente por los
+                nativos americanos como un sedante suave y analgésico.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/sauce_blanco.jpg"
+              class="card-img-top"
+              alt="Sauce Blanco"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Sauce Blanco</h5>
+              <p class="card-text">
+                Fuente natural de salicina, utilizada como analgésico y
+                antiinflamatorio.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su corteza ha sido usada por milenios
+                para tratar el dolor, inspirando la creación de la aspirina.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/sauco.jpg" class="card-img-top" alt="Saúco" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Saúco</h5>
+              <p class="card-text">
+                Eficaz para fortalecer el sistema inmune y aliviar síntomas de
+                gripa.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Hipócrates lo llamaba "el botiquín
+                del pueblo" por la multitud de dolencias que podía tratar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/jengibre.jpg" class="card-img-top" alt="Jengibre" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Jengibre</h5>
+              <p class="card-text">
+                Combate las náuseas y posee potentes efectos antiinflamatorios y
+                digestivos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Ha sido un pilar en la medicina
+                tradicional asiática durante más de 5000 años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/equinacea.jpg" class="card-img-top" alt="Equinácea" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Equinácea</h5>
+              <p class="card-text">
+                Estimula el sistema inmunológico, ayudando a prevenir y combatir
+                infecciones.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Era la planta medicinal más
+                importante para los nativos de las llanuras de Norteamérica.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/lupulo.jpg" class="card-img-top" alt="Lúpulo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Lúpulo</h5>
+              <p class="card-text">
+                Utilizado por su efecto calmante, para inducir el sueño y como
+                tónico digestivo.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Aunque famoso por la cerveza, se ha
+                usado desde la Edad Media para tratar el nerviosismo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/curcuma.jpg" class="card-img-top" alt="Cúrcuma" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Cúrcuma</h5>
+              <p class="card-text">
+                Poderoso antiinflamatorio natural, beneficioso para la salud
+                articular.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Es un componente esencial en la
+                medicina ayurvédica de la India desde hace 4000 años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/harpagofito.jpg"
+              class="card-img-top"
+              alt="Harpagofito"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Harpagofito</h5>
+              <p class="card-text">
+                Especialmente indicado para aliviar el dolor en articulaciones y
+                la artritis.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Originaria de África, se popularizó
+                en Europa para tratar la artritis en el siglo XX.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/romero.jpg" class="card-img-top" alt="Romero" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Romero</h5>
+              <p class="card-text">
+                Estimulante que mejora la memoria, la concentración y la
+                circulación sanguínea.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Símbolo de la memoria en la antigua
+                Grecia, donde los estudiantes lo usaban en el cabello.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/melisa.jpg" class="card-img-top" alt="Melisa" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Melisa</h5>
+              <p class="card-text">
+                Conocida como toronjil, es ideal para calmar los nervios y
+                facilitar el descanso.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> El médico persa Avicena la
+                recomendaba en el siglo XI para "alegrar el corazón".
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/gordolobo.jpg" class="card-img-top" alt="Gordolobo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Gordolobo</h5>
+              <p class="card-text">
+                Beneficioso para el sistema respiratorio, alivia la tos y la
+                congestión.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> El médico griego Dioscórides ya la
+                recomendaba hace 2000 años para tratar enfermedades pulmonares.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/hierba_san_roberto.jpg"
+              class="card-img-top"
+              alt="Hierba de San Roberto"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hierba de San Roberto</h5>
+              <p class="card-text">
+                Planta con propiedades astringentes y diuréticas, usada en
+                remedios populares.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su nombre se asocia a San Roberto de
+                Molesmes, quien popularizó su uso en el siglo XI.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/pasionaria_azul.jpg"
+              class="card-img-top"
+              alt="Pasionaria Azul"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Pasionaria Azul</h5>
+              <p class="card-text">
+                Variedad de la pasiflora, con efectos relajantes para la
+                ansiedad y el insomnio.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Los misioneros españoles la llamaron
+                "Flor de la Pasión" por su semejanza con símbolos de la
+                crucifixión.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/malva_silvestre.jpg"
+              class="card-img-top"
+              alt="Malva Silvestre"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Malva Silvestre</h5>
+              <p class="card-text">
+                Suaviza la garganta irritada y alivia afecciones de la piel por
+                su mucílago.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Carlomagno ordenó su cultivo en los
+                jardines imperiales por sus valoradas propiedades.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/arnica.jpg" class="card-img-top" alt="Árnica" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Árnica</h5>
+              <p class="card-text">
+                Ideal para uso tópico en golpes, moretones, inflamación y
+                dolores musculares.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina popular
+                europea desde el siglo XVI para tratar caídas y contusiones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/arbol_te.jpg"
+              class="card-img-top"
+              alt="Árbol de té"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Árbol de té</h5>
+              <p class="card-text">
+                Potente antiséptico y antifúngico, excelente para tratar
+                afecciones de la piel.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Los aborígenes australianos han usado
+                sus hojas machacadas como antiséptico durante milenios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/salvia.jpg" class="card-img-top" alt="Salvia" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Salvia</h5>
+              <p class="card-text">
+                Con propiedades antiinflamatorias y antisépticas, es ideal para
+                aliviar dolores de garganta.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su nombre proviene del latín
+                "salvare" (curar), y fue una hierba sagrada para los romanos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hamamelis.jpg" class="card-img-top" alt="Hamamelis" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hamamelis</h5>
+              <p class="card-text">
+                Astringente natural, excelente para el cuidado de la piel y para
+                aliviar irritaciones.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada por los nativos americanos
+                para tratar heridas e inflamaciones de la piel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/bardana.jpg" class="card-img-top" alt="Bardana" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Bardana</h5>
+              <p class="card-text">
+                Conocida por sus propiedades depurativas, ayuda a eliminar
+                toxinas y a mejorar la piel.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> En la medicina tradicional china se
+                ha usado por siglos como purificador de la sangre.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/diente_de_leon.jpg"
+              class="card-img-top"
+              alt="Diente de león"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Diente de león</h5>
+              <p class="card-text">
+                Planta diurética y desintoxicante, ideal para la salud del
+                hígado y los riñones.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Usada en la medicina tradicional
+                europea para tratar problemas hepáticos y digestivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tila.jpg" class="card-img-top" alt="Tila" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Tila</h5>
+              <p class="card-text">
+                Conocida por sus propiedades relajantes, es ideal para calmar
+                los nervios y conciliar el sueño.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Remedio popular en Europa para la
+                ansiedad, el insomnio y los resfriados.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/amapola_california.jpg"
+              class="card-img-top"
+              alt="Amapola de California"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Amapola de California</h5>
+              <p class="card-text">
+                Sedante suave, útil para el insomnio y la ansiedad, sin ser
+                adictiva.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Empleada por los nativos americanos
+                como remedio para el dolor y para ayudar a dormir.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/avena.jpg" class="card-img-top" alt="Avena" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Avena</h5>
+              <p class="card-text">
+                Nutritiva y calmante, ideal para el sistema nervioso y para el
+                cuidado de la piel.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Cultivada desde la antigüedad, los
+                romanos la usaban en baños para aliviar problemas de la piel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ginkgo.jpg" class="card-img-top" alt="Ginkgo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Ginkgo</h5>
+              <p class="card-text">
+                Mejora la memoria y la concentración al aumentar el flujo
+                sanguíneo al cerebro.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Considerado un "fósil viviente", ha
+                sido usado en la medicina china durante miles de años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/hierba_san_juan.jpg"
+              class="card-img-top"
+              alt="Hierba de San Juan"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hierba de San Juan</h5>
+              <p class="card-text">
+                Conocida por sus propiedades antidepresivas, ayuda a mejorar el
+                estado de ánimo.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Usada desde la antigua Grecia para
+                tratar heridas y trastornos nerviosos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/matricaria.jpg"
+              class="card-img-top"
+              alt="Matricaria"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Matricaria</h5>
+              <p class="card-text">
+                Eficaz en la prevención de migrañas y dolores de cabeza.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> El médico griego Dioscórides la
+                recomendaba para la fiebre y la inflamación.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/albahaca.jpg" class="card-img-top" alt="Albahaca" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Albahaca</h5>
+              <p class="card-text">
+                Con propiedades digestivas y relajantes, alivia el malestar
+                estomacal y el estrés.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Originaria de la India, donde se
+                considera una planta sagrada.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/verbena.jpg" class="card-img-top" alt="Verbena" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Verbena</h5>
+              <p class="card-text">
+                Tónico nervioso que calma la ansiedad y la tensión, con un
+                efecto analgésico suave.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Considerada una planta mágica por los
+                druidas, se ha utilizado en la medicina popular europea.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/malvavisco.jpg"
+              class="card-img-top"
+              alt="Malvavisco"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Malvavisco</h5>
+              <p class="card-text">
+                Alivia la tos seca e irritante, y protege la garganta gracias a
+                su alto contenido en mucílagos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado desde la antigüedad por
+                egipcios y griegos para tratar dolores de garganta.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/regaliz.jpg" class="card-img-top" alt="Regaliz" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Regaliz</h5>
+              <p class="card-text">
+                Con propiedades expectorantes y antiinflamatorias, alivia la tos
+                y el dolor de garganta.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Usado en la medicina tradicional
+                china y europea durante miles de años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hiedra.jpg" class="card-img-top" alt="Hiedra" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hiedra</h5>
+              <p class="card-text">
+                Ayuda a fluidificar la mucosidad y facilita su expulsión,
+                aliviando la tos productiva.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Planta sagrada para los antiguos
+                griegos y romanos, su uso medicinal se remonta a la Edad Media.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/llanten.jpg" class="card-img-top" alt="Llantén" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Llantén</h5>
+              <p class="card-text">
+                Alivia la tos seca e irritante y reduce la inflamación de las
+                vías respiratorias.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Remedio popular en todo el mundo para
+                tratar heridas y problemas respiratorios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/eucalipto.jpg" class="card-img-top" alt="Eucalipto" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Eucalipto</h5>
+              <p class="card-text">
+                Con propiedades expectorantes y descongestionantes, alivia la
+                congestión y la tos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Originario de Australia, utilizado
+                por los aborígenes para tratar infecciones respiratorias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/oregano.jpg" class="card-img-top" alt="Orégano" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Orégano</h5>
+              <p class="card-text">
+                Con potentes propiedades antibacterianas y antivirales, alivia
+                la tos y la congestión.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado por los antiguos griegos y
+                romanos como especia y medicina.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/anis.jpg" class="card-img-top" alt="Anís" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Anís</h5>
+              <p class="card-text">
+                Alivia la tos seca y la congestión, y tiene propiedades
+                expectorantes y antiespasmódicas.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Cultivado en Egipto y Oriente Medio
+                durante miles de años, los romanos lo usaban en pasteles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/clavo.jpg" class="card-img-top" alt="Clavo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Clavo</h5>
+              <p class="card-text">
+                Potente analgésico y antiinflamatorio, utilizado para aliviar
+                dolores musculares.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Especia muy valorada desde la
+                antigüedad, usada en la medicina tradicional china.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/cayena.jpg" class="card-img-top" alt="Cayena" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Cayena</h5>
+              <p class="card-text">
+                Reduce la percepción del dolor y bloquea las señales de dolor
+                que se envían al cerebro.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Originaria de América, utilizada
+                durante miles de años como alimento y medicina.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/consuelda.jpg" class="card-img-top" alt="Consuelda" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Consuelda</h5>
+              <p class="card-text">
+                Promueve la regeneración celular y la cicatrización de los
+                tejidos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su nombre proviene del latín
+                "consolidare", que significa "unir", por su capacidad para
+                soldar huesos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/abedul.jpg" class="card-img-top" alt="Abedul" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Abedul</h5>
+              <p class="card-text">
+                Con propiedades analgésicas y antiinflamatorias, reduce el dolor
+                y la inflamación.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado por culturas del norte de
+                Europa y América del Norte por sus propiedades medicinales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/rodiola.jpg" class="card-img-top" alt="Rodiola" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Rodiola</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda al cuerpo a resistir el estrés físico,
+                químico y biológico.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina tradicional
+                de Rusia y los países escandinavos durante siglos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/albahaca_sagrada.jpg"
+              class="card-img-top"
+              alt="Albahaca sagrada"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Albahaca sagrada</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda al cuerpo a lidiar con el estrés, calma la
+                mente y reduce la ansiedad.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> En el hinduismo, es venerada como una
+                planta sagrada.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/ginseng_siberiano.jpg"
+              class="card-img-top"
+              alt="Ginseng siberiano"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Ginseng siberiano</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda a aumentar la resistencia al estrés y a
+                combatir la fatiga.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado en la medicina tradicional
+                china durante más de 2.000 años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/schisandra.jpg"
+              class="card-img-top"
+              alt="Schisandra"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Schisandra</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda a proteger el cuerpo del estrés y a mejorar
+                la concentración.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina tradicional
+                china durante siglos para tonificar los riñones y calmar el
+                corazón.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/gotu_kola.jpg" class="card-img-top" alt="Gotu kola" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Gotu kola</h5>
+              <p class="card-text">
+                Reduce la ansiedad, mejora la memoria y la concentración, y
+                promueve la salud de la piel.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocida como la "hierba de la
+                longevidad", ha sido utilizada en la medicina ayurvédica y china
+                durante miles de años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/bacopa.jpg" class="card-img-top" alt="Bacopa" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Bacopa</h5>
+              <p class="card-text">
+                Mejora la memoria, la concentración y el aprendizaje, y ayuda a
+                reducir la ansiedad.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina ayurvédica
+                durante siglos como un tónico cerebral y un rejuvenecedor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/reishi.jpg" class="card-img-top" alt="Reishi" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Reishi</h5>
+              <p class="card-text">
+                Hongo adaptógeno que ayuda al cuerpo a lidiar con el estrés y a
+                calmar la mente.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocido como el "hongo de la
+                inmortalidad", ha sido utilizado en la medicina tradicional
+                china durante más de 2.000 años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/cordyceps.jpg" class="card-img-top" alt="Cordyceps" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Cordyceps</h5>
+              <p class="card-text">
+                Hongo adaptógeno que ayuda a combatir la fatiga y a mejorar el
+                rendimiento físico.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado en la medicina tradicional
+                china y tibetana durante siglos para tratar la fatiga y la
+                debilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/melena_de_leon.jpg"
+              class="card-img-top"
+              alt="Melena de león"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Melena de león</h5>
+              <p class="card-text">
+                Hongo que se utiliza para mejorar la función cognitiva, la
+                memoria y la concentración.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado en la medicina tradicional
+                china y japonesa durante siglos para tratar problemas
+                digestivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/azafran.jpg" class="card-img-top" alt="Azafrán" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Azafrán</h5>
+              <p class="card-text">
+                Mejora el estado de ánimo, reduce la ansiedad y alivia los
+                síntomas de la depresión.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Una de las especias más caras del
+                mundo, se ha utilizado durante siglos en la medicina tradicional
+                persa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/milenrama.jpg" class="card-img-top" alt="Milenrama" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Milenrama</h5>
+              <p class="card-text">
+                Induce la sudoración, ayudando a reducir la fiebre de forma
+                natural.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocida como "la hierba de los
+                soldados", se dice que Aquiles la utilizó para curar las heridas
+                de sus hombres.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/eupatorio.jpg" class="card-img-top" alt="Eupatorio" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Eupatorio</h5>
+              <p class="card-text">
+                Potente diaforético y estimulante del sistema inmunológico.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Los nativos americanos la utilizaban
+                ampliamente para tratar fiebres.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ulmaria.jpg" class="card-img-top" alt="Ulmaria" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Ulmaria</h5>
+              <p class="card-text">
+                Reduce la fiebre y alivia los dolores y molestias.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocida como la "aspirina vegetal",
+                fue una de las tres hierbas más sagradas para los druidas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/genciana.jpg" class="card-img-top" alt="Genciana" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Genciana</h5>
+              <p class="card-text">
+                Reduce la fiebre y estimula el sistema inmunológico.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina tradicional
+                europea desde la antigüedad para tratar una variedad de
+                dolencias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/ajo.jpg" class="card-img-top" alt="Ajo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Ajo</h5>
+              <p class="card-text">
+                Con potentes propiedades antibacterianas y antivirales que ayuda
+                a combatir las infecciones.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizado como medicina durante miles
+                de años. Los constructores de las pirámides de Egipto lo
+                consumían para mantenerse fuertes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hisopo.jpg" class="card-img-top" alt="Hisopo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hisopo</h5>
+              <p class="card-text">
+                Expectorante que ayuda a aflojar la mucosidad y a facilitar su
+                expulsión.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Mencionado en la Biblia, se ha
+                utilizado durante miles de años como una hierba purificadora y
+                medicinal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/astragalo.jpg" class="card-img-top" alt="Astrágalo" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Astrágalo</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda al cuerpo a resistir el estrés y las
+                enfermedades.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Una de las hierbas más importantes de
+                la medicina tradicional china.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/bayas_de_goji.jpg"
+              class="card-img-top"
+              alt="Bayas de Goji"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Bayas de Goji</h5>
+              <p class="card-text">
+                Ricas en antioxidantes, vitamina C y otros nutrientes que ayudan
+                a proteger el cuerpo contra las infecciones.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizadas en la medicina tradicional
+                china durante más de 2.000 años para promover la longevidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/andrographis.jpg"
+              class="card-img-top"
+              alt="Andrographis"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Andrographis</h5>
+              <p class="card-text">
+                Conocida como la "equinácea de la India", tiene potentes
+                propiedades antiinflamatorias y antivirales.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Una hierba importante en la medicina
+                ayurvédica y china.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/hongo_reishi.jpg"
+              class="card-img-top"
+              alt="Hongo Reishi"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hongo Reishi</h5>
+              <p class="card-text">
+                Adaptógeno que ayuda al cuerpo a lidiar con el estrés y a
+                fortalecer las defensas.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocido como el "hongo de la
+                inmortalidad", ha sido venerado en la medicina tradicional china
+                durante miles de años.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/equiseto.jpg" class="card-img-top" alt="Equiseto" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Equiseto</h5>
+              <p class="card-text">
+                Rica en sílice, un mineral que ayuda a fortalecer el tejido
+                conectivo y a acelerar la cicatrización.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Una planta prehistórica, ha sido
+                utilizado en la medicina tradicional durante siglos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/sello_de_oro.jpg"
+              class="card-img-top"
+              alt="Sello de Oro"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Sello de Oro</h5>
+              <p class="card-text">
+                Contiene berberina, un alcaloide con potentes propiedades
+                antibacterianas y antiinflamatorias.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada por los nativos americanos
+                para tratar infecciones de la piel y problemas digestivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/mirra.jpg" class="card-img-top" alt="Mirra" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Mirra</h5>
+              <p class="card-text">
+                Resina con potentes propiedades antisépticas, antiinflamatorias
+                y cicatrizantes.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Valorada desde la antigüedad por su
+                fragancia y sus propiedades medicinales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/cereza_acida.jpg"
+              class="card-img-top"
+              alt="Cereza ácida"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Cereza ácida</h5>
+              <p class="card-text">
+                Fuente natural de melatonina, la hormona que regula el ciclo de
+                sueño-vigilia.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Su uso para el insomnio es más
+                reciente, pero las cerezas han sido apreciadas por sus
+                beneficios para la salud durante siglos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/magnolia.jpg" class="card-img-top" alt="Magnolia" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Magnolia</h5>
+              <p class="card-text">
+                Reduce la ansiedad, el estrés y mejora el sueño.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina tradicional
+                china durante siglos para tratar la ansiedad, la depresión y los
+                trastornos del sueño.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/canela.jpg" class="card-img-top" alt="Canela" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Canela</h5>
+              <p class="card-text">
+                Alivia los cólicos menstruales y a regular el flujo sanguíneo.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Especia muy valorada desde la
+                antigüedad, se ha utilizado para tratar una variedad de
+                dolencias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/dong_quai.jpg" class="card-img-top" alt="Dong quai" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Dong quai</h5>
+              <p class="card-text">
+                Conocida como el "ginseng femenino", contiene fitoestrógenos que
+                ayudan a equilibrar las hormonas.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Una de las hierbas más importantes de
+                la medicina tradicional china para la salud de la mujer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/sauzgatillo.jpg"
+              class="card-img-top"
+              alt="Sauzgatillo"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Sauzgatillo</h5>
+              <p class="card-text">
+                Actúa sobre la glándula pituitaria para equilibrar los niveles
+                de estrógeno y progesterona.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> En la antigua Grecia, se creía que
+                reducía el deseo sexual.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/cimicifuga.jpg"
+              class="card-img-top"
+              alt="Cimicífuga"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Cimicífuga</h5>
+              <p class="card-text">
+                Alivia los cólicos menstruales y los síntomas de la menopausia.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada por los nativos americanos
+                para tratar una variedad de problemas de salud de la mujer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/artemisa.jpg" class="card-img-top" alt="Artemisa" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Artemisa</h5>
+              <p class="card-text">
+                Emenagogo que ayuda a estimular el flujo menstrual y a aliviar
+                los cólicos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Conocida como la "hierba de la
+                mujer", ha sido utilizada durante siglos en la medicina
+                tradicional europea y asiática.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/frambuesa.jpg" class="card-img-top" alt="Frambuesa" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Frambuesa</h5>
+              <p class="card-text">
+                Tónico uterino que ayuda a tonificar los músculos del útero y a
+                aliviar los cólicos.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada durante siglos por las
+                mujeres para apoyar la salud reproductiva.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hiperico.jpg" class="card-img-top" alt="Hipérico" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Hipérico</h5>
+              <p class="card-text">
+                También conocida como hierba de San Juan, se usa tópicamente
+                para aliviar quemaduras y heridas.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada desde la antigua Grecia
+                para tratar una variedad de dolencias, desde heridas hasta
+                trastornos nerviosos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/te_negro.jpg" class="card-img-top" alt="Té Negro" />
+            <div class="card-body">
+              <h5 class="card-title text-success">Té Negro</h5>
+              <p class="card-text">
+                Rico en taninos, que tienen propiedades astringentes y
+                antiinflamatorias.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> El té se ha consumido como bebida
+                durante miles de años, pero su uso tópico para tratar afecciones
+                de la piel también es una práctica tradicional.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="img/centella_asiatica.jpg"
+              class="card-img-top"
+              alt="Centella Asiática"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-success">Centella Asiática</h5>
+              <p class="card-text">
+                Acelera la curación de heridas y quemaduras, y mejora la
+                producción de colágeno.
+              </p>
+              <p class="card-text text-muted small mt-2">
+                <strong>Historia:</strong> Utilizada en la medicina tradicional
+                china y ayurvédica durante siglos para tratar afecciones de la
+                piel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="mt-auto py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://www.instagram.com/as_juan_ca/" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573222614519" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"><i class="bi bi-envelope"></i></a>
-            </div>
+      <div class="container text-center">
+        <p class="mb-1">&copy; 2025 EcoFarma. Todos los derechos reservados.</p>
+        <div>
+          <a
+            href="https://www.instagram.com/as_juan_ca/"
+            class="text-white mx-2"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/573222614519" class="text-white mx-2"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="mailto:ecofarma.informa@gmail.com" class="text-white mx-2"
+            ><i class="bi bi-envelope"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
