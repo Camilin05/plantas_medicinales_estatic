@@ -1,47 +1,49 @@
 /* ---- Estilos Generales y Fondo ---- */
 body {
-    /* Fondo con imagen y capa semitransparente */
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('../img/fondo.png');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-    /* Ajuste para la barra de navegación fija (fixed-top) */
-    padding-top: 70px;
+  /* Fondo con imagen y capa semitransparente */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../img/fondo.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* Ajuste para la barra de navegación fija (fixed-top) */
+  padding-top: 70px;
 }
 
 /* ---- Estilos para la Barra de Navegación ---- */
 .navbar {
-    background-color: #4CAF50; /* Verde principal */
+  background-color: #4caf50; /* Verde principal */
 }
 
 .navbar .nav-link {
-    color: #ffffff;
-    transition: background-color 0.2s ease-in-out;
-    border-radius: 5px;
-    margin: 0 5px;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  margin: 0 5px;
 }
 
 .navbar .nav-link:hover {
-    background-color: #388E3C; /* Verde más oscuro */
+  background-color: #388e3c; /* Verde más oscuro */
 }
 
 .navbar .nav-link.active {
-    font-weight: bold;
-    background-color: #2E7D32; /* Verde aún más oscuro */
+  font-weight: bold;
+  background-color: #2e7d32; /* Verde aún más oscuro */
 }
 
 .navbar .navbar-brand {
-    font-weight: bold;
-    color: #ffffff !important;
+  font-weight: bold;
+  color: #ffffff !important;
 }
 
 /* ---- Estilos para las imágenes de las tarjetas ---- */
 .card-img-top {
-    max-height: 200px; /* Puedes ajustar este valor si quieres que sean más altas o bajas */
-    object-fit: cover; /* Esto asegura que la imagen cubra el espacio sin deformarse */
-    width: 100%;
+  max-height: 300px; /* Puedes ajustar este valor si quieres que sean más altas o bajas */
+  object-fit: cover; /* Esto asegura que la imagen cubra el espacio sin deformarse */
+  width: 100%;
 }
